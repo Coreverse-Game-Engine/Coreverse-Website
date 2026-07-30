@@ -256,7 +256,7 @@ export const setInitialPassword = async (
   const { data: userData, error: userError } = await supabase.auth.getUser();
 
   if (userError || !userData.user) {
-    return { status: "error", message: `DEBUG: ${userError?.message ?? "no session found"}` };
+    redirect(`/${locale}/login`);
   }
 
   const { error } = await supabase.auth.updateUser({ password: parsed.data.password });

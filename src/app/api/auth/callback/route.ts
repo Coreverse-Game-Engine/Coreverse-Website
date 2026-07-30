@@ -1,12 +1,14 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import type { User } from "@supabase/supabase-js";
 
-import { createClient } from "@/supabase/server";
 import { createAdminClient } from "@/supabase/admin";
 import { generateRandomPassword } from "@/lib/generate-password";
 
 const NEW_USER_WINDOW_MS = 5000;
 const NEEDS_PASSWORD_COOKIE = "coreverse-needs-password";
+
+type PendingCookie = { name: string; value: string; options: CookieOptions };
 
 const deriveUsername = (metadata: Record<string, unknown>, email: string): string => {
   const candidates = [metadata.username, metadata.user_name, metadata.preferred_username, metadata.full_name, metadata.name];
@@ -29,47 +31,75 @@ export const GET = async (request: NextRequest) => {
   const next = searchParams.get("next") ?? "/";
   const baseUrl = process.env.NEXT_APP_URL;
 
-  if (code) {
-    const supabase = await createClient();
-    const { error } = await supabase.auth.exchangeCodeForSession(code);
+  if (!code) {
+    return NextResponse.redirect(`${baseUrl}/login?error=oauth`);
+  }
 
-    if (!error) {
-      const { data } = await supabase.auth.getUser();
-      const user = data.user;
+  // Session cookie'lerini burada topluyoruz; sonra hangi response'u
+  // döneceğimize karar verince (ana sayfa mı, set-password mi) o
+  // response'un üzerine yazacağız. next/headers() cookieStore'una yazıp
+  // ayrı bir NextResponse döndürmek, cookie'lerin tarayıcıya hiç
+  // gitmemesine yol açıyordu.
+  const pendingCookies: PendingCookie[] = [];
 
-      if (user) {
-        if (!user.user_metadata.username) {
-          const username = deriveUsername(user.user_metadata, user.email ?? "");
-          await supabase.auth.updateUser({ data: { username } });
-        }
-
-        if (isBrandNewUser(user)) {
-          const admin = createAdminClient();
-          const randomPassword = generateRandomPassword();
-
-          // Safety net: account always has a password credential, even if the
-          // user never completes the set-password step below.
-          await admin.auth.admin.updateUserById(user.id, { password: randomPassword });
-
-          const locale = extractLocale(next);
-          const setPasswordUrl = new URL(`${baseUrl}/${locale}/set-password`);
-          setPasswordUrl.searchParams.set("next", next);
-
-          const response = NextResponse.redirect(setPasswordUrl);
-          response.cookies.set(NEEDS_PASSWORD_COOKIE, "1", {
-            path: "/",
-            httpOnly: true,
-            sameSite: "lax",
-            maxAge: 60 * 30,
+  const supabase = createServerClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        getAll: () => request.cookies.getAll(),
+        setAll: (cookiesToSet) => {
+          cookiesToSet.forEach(({ name, value, options }) => {
+            pendingCookies.push({ name, value, options });
           });
+        },
+      },
+    },
+  );
 
-          return response;
-        }
-      }
+  const { error } = await supabase.auth.exchangeCodeForSession(code);
 
-      return NextResponse.redirect(`${baseUrl}${next}`);
+  if (error) {
+    console.error("[auth callback] exchangeCodeForSession error:", error.message);
+    return NextResponse.redirect(`${baseUrl}/login?error=oauth`);
+  }
+
+  const applyCookies = (response: NextResponse): NextResponse => {
+    pendingCookies.forEach(({ name, value, options }) => {
+      response.cookies.set(name, value, options);
+    });
+    return response;
+  };
+
+  const { data } = await supabase.auth.getUser();
+  const user = data.user;
+
+  if (user) {
+    if (!user.user_metadata.username) {
+      const username = deriveUsername(user.user_metadata, user.email ?? "");
+      await supabase.auth.updateUser({ data: { username } });
+    }
+
+    if (isBrandNewUser(user)) {
+      const admin = createAdminClient();
+      const randomPassword = generateRandomPassword();
+      await admin.auth.admin.updateUserById(user.id, { password: randomPassword });
+
+      const locale = extractLocale(next);
+      const setPasswordUrl = new URL(`${baseUrl}/${locale}/set-password`);
+      setPasswordUrl.searchParams.set("next", next);
+
+      const response = applyCookies(NextResponse.redirect(setPasswordUrl));
+      response.cookies.set(NEEDS_PASSWORD_COOKIE, "1", {
+        path: "/",
+        httpOnly: true,
+        sameSite: "lax",
+        maxAge: 60 * 30,
+      });
+
+      return response;
     }
   }
 
-  return NextResponse.redirect(`${baseUrl}/login?error=oauth`);
+  return applyCookies(NextResponse.redirect(`${baseUrl}${next}`));
 };

@@ -1,8 +1,8 @@
 <div style="text-align: center;">
 
-<img src="public/images/coreverse-engine-emblem.svg" width="160" alt="Coreverse Logo"/>
+<img src="public/images/coreverse-engine-emblem.svg" width=" 250" alt ="Logo" >
 
-# 🌌 Coreverse Website
+# Coreverse Website
 
 **The official website for the Coreverse ecosystem.**
 
