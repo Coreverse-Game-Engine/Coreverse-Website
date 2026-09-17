@@ -14,7 +14,7 @@ Designed for speed, accessibility, scalability, and an exceptional developer exp
 
 <img src="https://img.shields.io/badge/Next.js-16-black?logo=next.js" alt="Next.js"/>
 <img src="https://img.shields.io/badge/React-19-61DAFB?logo=react" alt="React"/>
-<img src="https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/TypeScript-7-3178C6?logo=typescript" alt="TypeScript"/>
 <img src="https://img.shields.io/badge/TailwindCSS-4-38B2AC?logo=tailwindcss" alt="Tailwind CSS"/>
 <img src="https://img.shields.io/badge/Open_Source-❤-brightgreen" alt="Open Source"/>
 <img src="https://img.shields.io/github/license/KING-MASTER2012/Coreverse-Website" alt="GitHub License"/>
@@ -97,6 +97,7 @@ The project is built with a strong focus on:
 | Tailwind CSS   | Styling                  |
 | next-intl      | Localization             |
 | Supabase       | Backend & Authentication |
+| pnpm           | Package Manager          |
 | GitHub Actions | CI/CD                    |
 | ESLint         | Code Quality             |
 
@@ -196,7 +197,8 @@ cd coreverse-website
 Install dependencies:
 
 ```bash
-npm install
+corepack enable
+pnpm install
 ```
 
 Create:
@@ -230,11 +232,11 @@ NEXT_APP_URL=
 Start Development:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 or Start Host Development:
 ```bash
-npm run dev:host
+pnpm run dev:host
 ```
 Open:
 
@@ -250,14 +252,14 @@ http://192.168.1.130:3000
 
 # 📜 Available Scripts
 
-| Command                 | Description               |
-|:------------------------|:--------------------------|
-| npm run dev             | Development server        |
-| npm run dev:host        | Host development server   |
-| npm run build           | Production build          |
-| npm run start           | Production server         |
-| npm run lint            | Run ESLint                |
-| npm run typecheck       | Testing if the code works |
+| Command                  | Description               |
+|:-------------------------|:--------------------------|
+| pnpm run dev             | Development server        |
+| pnpm run dev:host        | Host development server   |
+| pnpm run build           | Production build          |
+| pnpm run start           | Production server         |
+| pnpm run lint            | Run ESLint                |
+| pnpm run typecheck       | Testing if the code works |
 
 ---
 

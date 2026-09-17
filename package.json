@@ -2,9 +2,13 @@
   "name": "coreverse-website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "packageManager": "pnpm@12.4.1+sha512.2e81e399d73fe8390dab25e06aa788ab7a5908248d2f5a370f82b481147a6a7a367bf8048f9a6fdb6460f21a66f0542dedb8b94ca2c8723596741920b1656d4c",
   "scripts": {
     "dev": "next dev",
-    "dev:host": "npm run dev -- --hostname 0.0.0.0",
+    "dev:host": "pnpm run dev -- --hostname 0.0.0.0",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
@@ -19,12 +23,12 @@
     "clsx": "^2.1.1",
     "lucide-react": "^1.23.0",
     "maverick.js": "^0.44.1",
-    "motion": "^12.42.2",
-    "next": "16.2.10",
+    "motion": "^13.4.0",
+    "next": "16.3.5",
     "next-intl": "^4.13.2",
     "radix-ui": "^1.6.1",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
     "react-hook-form": "^7.80.0",
     "shadcn": "^4.13.0",
     "tailwind-merge": "^3.6.0",
@@ -33,13 +37,17 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^22.20.3",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@typescript/native": "npm:typescript@^7.0.2",
     "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.10",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.3.5",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "npm:@typescript/typescript6@^6.0.2"
   }
 }
