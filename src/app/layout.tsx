@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { CoreverseProvider } from "@/providers/coreverse-provider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -35,7 +36,9 @@ const RootLayout = ({
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} min-h-screen antialiased`}
     >
-    <body className="flex min-h-screen flex-col bg-background font-sans text-foreground">{children}</body>
+    <body className="flex min-h-screen flex-col bg-background font-sans text-foreground">
+    <CoreverseProvider>{children}</CoreverseProvider>
+    </body>
     </html>
   );
 };

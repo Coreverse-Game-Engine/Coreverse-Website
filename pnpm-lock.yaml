@@ -166,6 +166,9 @@ importers:
 
   .:
     dependencies:
+      '@Coreverse-Game-Engine/db-client':
+        specifier: ^0.4.1
+        version: 0.4.1(@tanstack/react-query@5.103.1(react@19.3.0))(react@19.3.0)
       '@getbrevo/brevo':
         specifier: ^6.0.2
         version: 6.0.3
@@ -175,6 +178,9 @@ importers:
       '@supabase/supabase-js':
         specifier: ^2.110.6
         version: 2.116.0
+      '@tanstack/react-query':
+        specifier: ^5
+        version: 5.103.1(react@19.3.0)
       '@vidstack/react':
         specifier: ^1.15.6
         version: 1.15.6(@types/react@19.3.0)(react@19.3.0)
@@ -265,6 +271,13 @@ importers:
         version: '@typescript/typescript6@6.0.2'
 
 packages:
+
+  '@Coreverse-Game-Engine/db-client@0.4.1':
+    resolution: {integrity: sha512-CSaieMYukij8Z9XEdUZEquSWvRxXZHQ+i+NCJawUhYXNnDeUz9BMpn4njPJgJ1BJYASPYXG03utYcclJ9Y7XBA==, tarball: https://npm.pkg.github.com/download/@Coreverse-Game-Engine/db-client/0.4.1/6f8d953971caa4d5f7f1afa392b1c9c99934591b}
+    engines: {node: '>=22.18.0'}
+    peerDependencies:
+      '@tanstack/react-query': ^5
+      react: '>=18'
 
   '@alloc/quick-lru@5.3.0':
     resolution: {integrity: sha512-U4+70Pc5ZS9osnCBCE5Jha/ciHM+Yp+CNMNC/7HvYbNRk1Ldd+f7qO65W5qfhu/TCv+/ozljlXXe9Nj8419DMA==}
@@ -1812,6 +1825,14 @@ packages:
 
   '@tailwindcss/postcss@4.3.3':
     resolution: {integrity: sha512-JTSZZGQi1AyKirbLN3azmjVzef92tcX7h+iSqPdaeStyFpGpDlKvvpxeOE8njhbUanbRwr3z8DyzhICWnMtQeg==}
+
+  '@tanstack/query-core@5.103.1':
+    resolution: {integrity: sha512-rms8HqTGp6zA00dM+cUQ2eBcgzNJefuu5CAMB37i/6MiGT1zulPOytCFu2a0qjLqVR2n1jENPj9woqFQNuCzWA==}
+
+  '@tanstack/react-query@5.103.1':
+    resolution: {integrity: sha512-rmAPPApNEK17VXRJhtE1rja53n23VV5w30C0saCgJhhX+EpdUnVqMGV/s5nnzV43X75KTHKzuoiuxSzGTBIkag==}
+    peerDependencies:
+      react: ^18 || ^19
 
   '@ts-morph/common@0.27.0':
     resolution: {integrity: sha512-Wf29UqxWDpc+i61k3oIOzcUfQt79PIT9y/MWfAGlrkjg6lBC1hwDECLXPVJAhWjiGbfBCxZd65F/LIZF3+jeJQ==}
@@ -4338,6 +4359,12 @@ packages:
 
 snapshots:
 
+  '@Coreverse-Game-Engine/db-client@0.4.1(@tanstack/react-query@5.103.1(react@19.3.0))(react@19.3.0)':
+    dependencies:
+      '@tanstack/react-query': 5.103.1(react@19.3.0)
+      react: 19.3.0
+      zod: 4.6.5
+
   '@alloc/quick-lru@5.3.0': {}
 
   '@babel/code-frame@7.29.7':
@@ -5870,6 +5897,13 @@ snapshots:
       '@tailwindcss/oxide': 4.3.3
       postcss: 8.5.28
       tailwindcss: 4.3.3
+
+  '@tanstack/query-core@5.103.1': {}
+
+  '@tanstack/react-query@5.103.1(react@19.3.0)':
+    dependencies:
+      '@tanstack/query-core': 5.103.1
+      react: 19.3.0
 
   '@ts-morph/common@0.27.0':
     dependencies:

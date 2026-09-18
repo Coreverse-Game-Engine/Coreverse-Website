@@ -37,7 +37,7 @@ export const UserMenu = ({ user }: UserMenuProps) => {
           className="rounded-full outline-none focus-visible:ring-2 focus-visible:ring-blue-500/40"
           aria-label={t("userMenu")}
         >
-          <UserAvatar userId={user.id} username={user.username} size={40} className="border border-border/70" />
+          <UserAvatar avatarUrl={user.avatarUrl} username={user.username} size={40} className="border border-border/70" />
         </button>
       </HoverCardPrimitive.Trigger>
 
@@ -49,7 +49,7 @@ export const UserMenu = ({ user }: UserMenuProps) => {
           className="z-50 w-64 rounded-2xl border border-border/80 bg-popover/95 p-4 shadow-xl shadow-blue-950/10 backdrop-blur-xl dark:shadow-blue-950/30"
         >
           <div className="flex items-center gap-3">
-            <UserAvatar userId={user.id} username={user.username} size={44} />
+            <UserAvatar avatarUrl={user.avatarUrl} username={user.username} size={44} />
             <div className="min-w-0">
               <p className="truncate text-sm font-semibold text-foreground">{user.username}</p>
               <p className="truncate text-xs text-muted-foreground">{user.email}</p>
