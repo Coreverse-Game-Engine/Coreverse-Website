@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import type { User } from "@supabase/supabase-js";
 import { useGetMyProfile } from "@Coreverse-Game-Engine/db-client/react";
-import type { GetMyProfile200 } from "@Coreverse-Game-Engine/db-client";
 import { createClient } from "@/supabase/client";
 
 export type CurrentUser = {
@@ -62,15 +61,14 @@ export const useCurrentUser = (): UseCurrentUserResult => {
     return { user: null, isLoading: isAuthLoading };
   }
 
-  // NOTE: the generated type for this hook's `.data` is a
-  // { data, status, headers } envelope (Orval's usual "fetch" client
-  // shape), but the SDK's coreverseFetch mutator currently resolves with
-  // the parsed response body directly, not that envelope -- so at runtime
-  // this is a flat GetMyProfile200, not `.data.username`. Casting through
-  // `unknown` here to match actual behavior; this should go away once
-  // Coreverse DB's mutator is fixed to return the envelope its own
-  // generated types promise (see chat note).
-  const profile = profileQuery.data as unknown as GetMyProfile200 | undefined;
+  // profileQuery.data is a discriminated union over `status`
+  // ({status:200,data:GetMyProfile200} | {status:401,...} | {status:404,...}),
+  // since coreverseFetch resolves with the full envelope on success. Narrow
+  // on status===200 before touching `.data` -- accessing it unnarrowed
+  // fails to typecheck because the 401/404 bodies don't have
+  // username/avatar_url at all.
+  const profileResult = profileQuery.data;
+  const profile = profileResult?.status === 200 ? profileResult.data : undefined;
 
   return {
     user: {

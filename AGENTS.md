@@ -45,7 +45,7 @@ coreverse-website/
   - images/
     - Apple-Logo.svg
     - coreverse-engine.svg
-    - coreverse-engine-emblem.svg
+    - coreverse-emblem.svg
     - GitHub_Invertocat_Black.svg
     - GitHub_Invertocat_white.svg
     - Google-Logo.svg

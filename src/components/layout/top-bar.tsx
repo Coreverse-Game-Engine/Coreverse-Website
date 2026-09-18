@@ -129,7 +129,7 @@ export const TopBar = () => {
           onClick={() => navigate("main")}
         >
           <span className="flex size-11 items-center justify-center rounded-2xl border border-blue-500/20 bg-blue-500/10 shadow-lg shadow-blue-500/10">
-            <Image src="/images/coreverse-engine-emblem.svg" alt="Coreverse Engine Logo" width={34} height={34} priority />
+            <Image src="/images/coreverse-emblem.svg" alt="Coreverse Engine Logo" width={34} height={34} priority />
           </span>
           <span className="hidden min-w-0 flex-col sm:flex">
             <span className="truncate text-sm font-semibold tracking-[0.22em] text-foreground uppercase">

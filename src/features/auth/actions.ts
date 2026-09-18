@@ -5,9 +5,9 @@ import { redirect } from "next/navigation";
 import { getLocale, getTranslations } from "next-intl/server";
 
 import { createClient } from "@/supabase/server";
-import { createAdminClient } from "@/supabase/admin";
-import { sendWelcomeEmail, sendPasswordResetEmail } from "@/services/brevo";
-import { uploadAvatar } from "@/services/avatar-storage";
+import { requestPasswordReset as requestPasswordResetApi, CoreverseApiError } from "@Coreverse-Game-Engine/db-client";
+import { configureServerCoreverseClient } from "@/lib/coreverse/server";
+import { sendWelcomeEmail } from "@/services/brevo";
 import {
   createLoginSchema,
   createRegisterSchema,
@@ -15,9 +15,6 @@ import {
   createResetPasswordSchema,
 } from "./validation";
 import type { AuthActionState, OAuthProvider } from "./types";
-
-const MAX_AVATAR_SIZE_BYTES = 5 * 1024 * 1024;
-const RESET_COOLDOWN_SECONDS= 60;
 
 export const signIn = async (_prevState: AuthActionState, formData: FormData): Promise<AuthActionState> => {
   const locale = await getLocale();
@@ -70,18 +67,6 @@ export const signUp = async (_prevState: AuthActionState, formData: FormData): P
     return { status: "error", fieldErrors: parsed.error.flatten().fieldErrors };
   }
 
-  const avatarFile = formData.get("avatar");
-  const hasAvatar = avatarFile instanceof File && avatarFile.size > 0;
-
-  if (hasAvatar && avatarFile instanceof File) {
-    const isValidType = avatarFile.type.startsWith("image/");
-    const isValidSize = avatarFile.size <= MAX_AVATAR_SIZE_BYTES;
-
-    if (!isValidType || !isValidSize) {
-      return { status: "error", fieldErrors: { avatar: [t("errors.avatarInvalid")] } };
-    }
-  }
-
   const supabase = await createClient();
   const { data, error } = await supabase.auth.signUp({
     email: parsed.data.email,
@@ -95,14 +80,6 @@ export const signUp = async (_prevState: AuthActionState, formData: FormData): P
   if (error) {
     const isEmailInUse = error.code === "user_already_exists" || error.message.toLowerCase().includes("already registered");
     return { status: "error", message: isEmailInUse ? t("errors.emailInUse") : t("errors.generic") };
-  }
-
-  if (data.user && hasAvatar && avatarFile instanceof File) {
-    try {
-      await uploadAvatar(data.user.id, avatarFile);
-    } catch {
-      // Registration should not fail due to a non-critical avatar upload error.
-    }
   }
 
   if (data.user) {
@@ -142,40 +119,25 @@ export const requestPasswordReset = async (
     return { status: "error", fieldErrors: parsed.error.flatten().fieldErrors };
   }
 
-  const admin = createAdminClient();
+  configureServerCoreverseClient();
 
-  const { data: throttleRow } = await admin
-    .from("password_reset_throttle")
-    .select("last_requested_at")
-    .eq("email", parsed.data.email)
-    .maybeSingle();
-
-  const isThrottled =
-    throttleRow !== null &&
-    Date.now() - new Date(throttleRow.last_requested_at).getTime() < RESET_COOLDOWN_SECONDS * 1000;
-
-  if (!isThrottled) {
-    await admin
-      .from("password_reset_throttle")
-      .upsert({ email: parsed.data.email, last_requested_at: new Date().toISOString() });
-
-    const { data, error } = await admin.auth.admin.generateLink({
-      type: "recovery",
+  try {
+    // Coreverse DB owns sending the actual Supabase Auth recovery email now
+    // (and its own per-email/per-IP rate limiting) -- the Website no longer
+    // talks to Supabase admin or Brevo for this. The response is identical
+    // whether or not the address has an account, so this can't be used to
+    // enumerate registered emails.
+    await requestPasswordResetApi({
       email: parsed.data.email,
-      options: {
-        redirectTo: `${process.env.NEXT_APP_URL}/${locale}/reset-password`,
-      },
+      redirectTo: `${process.env.NEXT_APP_URL}/${locale}/reset-password`,
     });
-
-    if (error) {
-      console.error("[requestPasswordReset] generateLink error:", error.message);
-    } else if (data.properties?.action_link) {
-      await sendPasswordResetEmail({
-        email: parsed.data.email,
-        subject: t("resetEmail.subject"),
-        bodyHtml: `<p>${t("resetEmail.body")}</p><p><a href="${data.properties.action_link}">${t("resetEmail.cta")}</a></p>`,
-      });
+  } catch (err) {
+    if (err instanceof CoreverseApiError && err.status === 429) {
+      return { status: "error", message: t("errors.rateLimited") };
     }
+
+    console.error("[requestPasswordReset] Coreverse DB error:", err);
+    return { status: "error", message: t("errors.generic") };
   }
 
   return { status: "success", message: t("forgotPassword.successMessage") };

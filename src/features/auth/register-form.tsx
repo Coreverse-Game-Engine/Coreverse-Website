@@ -1,12 +1,11 @@
 "use client";
 
-import { useActionState, useState } from "react";
+import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
 import { useTranslations } from "next-intl";
 
 import { signUp } from "./actions";
 import type { AuthActionState } from "./types";
-import { AvatarUpload } from "./avatar-upload";
 import { Input } from "@/components/ui/Input/input";
 import { Label } from "@/components/ui/Label/label";
 import { Checkbox } from "@/components/ui/Checkbox/checkbox";
@@ -34,7 +33,6 @@ const SubmitButton = () => {
 export const RegisterForm = () => {
   const t = useTranslations("auth.register");
   const [state, formAction] = useActionState(signUp, initialState);
-  const [username, setUsername] = useState("");
 
   if (state.status === "success") {
     return (
@@ -46,8 +44,6 @@ export const RegisterForm = () => {
 
   return (
     <form action={formAction} className="flex flex-col gap-5">
-      <AvatarUpload username={username} error={state.fieldErrors?.avatar?.[0]} />
-
       <div className="flex flex-col gap-1.5">
         <Label htmlFor="username">{t("usernameLabel")}</Label>
         <Input
@@ -56,8 +52,6 @@ export const RegisterForm = () => {
           type="text"
           autoComplete="username"
           required
-          value={username}
-          onChange={(event) => setUsername(event.target.value)}
           placeholder={t("usernamePlaceholder")}
           aria-invalid={Boolean(state.fieldErrors?.username)}
         />

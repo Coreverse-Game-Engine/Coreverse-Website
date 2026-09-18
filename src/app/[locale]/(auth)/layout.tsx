@@ -12,7 +12,7 @@ const AuthLayout = ({ children }: AuthLayoutProps) => {
       <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-blue-500/10 via-transparent to-cyan-400/10" />
       <div className="w-full max-w-md">
         <Link href="/" className="mb-8 flex items-center justify-center gap-2">
-          <Image src="/images/coreverse-engine-emblem.svg" alt="Coreverse Engine" width={36} height={36} />
+          <Image src="/images/coreverse-emblem.svg" alt="Coreverse Engine" width={36} height={36} />
           <span className="text-lg font-semibold tracking-[-0.03em] text-foreground">Coreverse Engine</span>
         </Link>
 

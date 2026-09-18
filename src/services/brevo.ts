@@ -10,12 +10,6 @@ type SendWelcomeEmailParams = {
   bodyHtml: string;
 };
 
-type SendPasswordResetEmailParams = {
-  email: string;
-  subject: string;
-  bodyHtml: string;
-};
-
 export const sendWelcomeEmail = async ({ email, username, subject, bodyHtml }: SendWelcomeEmailParams): Promise<void> => {
   const apiKey = process.env.BREVO_API_KEY;
 
@@ -45,37 +39,5 @@ export const sendWelcomeEmail = async ({ email, username, subject, bodyHtml }: S
     }
   } catch (err) {
     console.error("[sendWelcomeEmail] fetch failed:", err);
-  }
-};
-
-export const sendPasswordResetEmail = async ({ email, subject, bodyHtml }: SendPasswordResetEmailParams): Promise<void> => {
-  const apiKey = process.env.BREVO_API_KEY;
-
-  if (!apiKey) {
-    console.error("[sendPasswordResetEmail] BREVO_API_KEY is not set");
-    return;
-  }
-
-  try {
-    const response = await fetch(BREVO_ENDPOINT, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-        "api-key": apiKey,
-      },
-      body: JSON.stringify({
-        sender: { name: SENDER_NAME, email: SENDER_EMAIL },
-        to: [{ email }],
-        subject,
-        htmlContent: bodyHtml,
-      }),
-    });
-
-    if (!response.ok) {
-      console.error(`[sendPasswordResetEmail] Brevo responded with ${response.status}:`, await response.text());
-    }
-  } catch (err) {
-    console.error("[sendPasswordResetEmail] fetch failed:", err);
   }
 };

@@ -1,6 +1,6 @@
 <div style="text-align: center;">
 
-<img src="public/images/coreverse-engine-emblem.svg" width=" 250" alt ="Logo" >
+<img src="public/images/coreverse-emblem.svg" width=" 250" alt ="Logo" >
 
 # Coreverse Website
 
@@ -214,10 +214,8 @@ Example:
 # Supabase (Client)
 NEXT_PUBLIC_SUPABASE_URL=
 NEXT_PUBLIC_SUPABASE_ANON_KEY=
-# Supabase (Server)
-SUPABASE_PASSWORD=
-SUPABASE_SECRET_KEY=
-DATABASE_URL=
+# Coreverse DB
+NEXT_PUBLIC_COREVERSE_API_URL=
 # Brevo
 BREVO_API_KEY=
 BREVO_SMTP_KEY=

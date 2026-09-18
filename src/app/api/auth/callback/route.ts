@@ -2,9 +2,6 @@ import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import type { User } from "@supabase/supabase-js";
 
-import { createAdminClient } from "@/supabase/admin";
-import { generateRandomPassword } from "@/lib/generate-password";
-
 const NEW_USER_WINDOW_MS = 5000;
 const NEEDS_PASSWORD_COOKIE = "coreverse-needs-password";
 
@@ -81,10 +78,10 @@ export const GET = async (request: NextRequest) => {
     }
 
     if (isBrandNewUser(user)) {
-      const admin = createAdminClient();
-      const randomPassword = generateRandomPassword();
-      await admin.auth.admin.updateUserById(user.id, { password: randomPassword });
-
+      // No service-role password assignment here anymore -- the user is
+      // already in a verified session from exchangeCodeForSession above,
+      // and that's all setInitialPassword needs to call
+      // supabase.auth.updateUser({ password }) on the /set-password page.
       const locale = extractLocale(next);
       const setPasswordUrl = new URL(`${baseUrl}/${locale}/set-password`);
       setPasswordUrl.searchParams.set("next", next);

@@ -109,7 +109,6 @@
       "badge": "Features",
       "title": "Powerful Features",
       "description": "Build games faster with a modern, extensible, and high-performance engine.",
-
       "videos": [
         {
           "title": "Modern Editor",
@@ -132,7 +131,6 @@
           "description": "Export your projects for Windows, Linux, and other supported platforms."
         }
       ],
-
       "previous": "Previous",
       "next": "Next"
     },
@@ -169,16 +167,7 @@
         "submitting": "Creating account...",
         "successMessage": "Your account has been created! You can return to the login page and sign in.",
         "haveAccount": "Already have an account?",
-        "loginLink": "Sign in",
-        "avatar": {
-          "hint": "PNG, JPG, or WEBP · max. 8MB",
-          "changePhoto": "Change photo",
-          "processing": "Processing...",
-          "remove": "Remove",
-          "invalidType": "Please select an image file.",
-          "tooLarge": "File is too large (max. 8MB).",
-          "processingFailed": "The image could not be processed. Please try again."
-        }
+        "loginLink": "Sign in"
       },
       "forgotPassword": {
         "title": "Forgot your password?",
@@ -222,12 +211,8 @@
         "emailInUse": "This email is already in use.",
         "generic": "Something went wrong. Please try again.",
         "avatarInvalid": "The profile picture is invalid or too large.",
-        "sessionExpired": "Your session has expired. Please sign in again."
-      },
-      "resetEmail": {
-        "subject": "Reset your Coreverse Engine password",
-        "body": "We received a request to reset the password for your Coreverse Engine account. If you made this request, click the button below to create a new password. If you didn't request a password reset, you can safely ignore this email.",
-        "cta": "Reset Password"
+        "sessionExpired": "Your session has expired. Please sign in again.",
+        "rateLimited": "Too many requests. Please wait a few minutes and try again."
       }
     }
   },
@@ -341,7 +326,6 @@
       "badge": "Özellikler",
       "title": "Güçlü Özellikler",
       "description": "Modern, genişletilebilir ve yüksek performanslı bir oyun motoruyla oyunlarınızı daha hızlı geliştirin.",
-
       "videos": [
         {
           "title": "Modern Düzenleyici",
@@ -364,7 +348,6 @@
           "description": "Projelerinizi Windows, Linux ve diğer desteklenen platformlar için dışa aktarın."
         }
       ],
-
       "previous": "Önceki",
       "next": "Sonraki"
     },
@@ -401,16 +384,7 @@
         "submitting": "Hesap oluşturuluyor...",
         "successMessage": "Hesabın oluşturuldu! Girişe dönüp oturum açabilirsin.",
         "haveAccount": "Zaten bir hesabın var mı?",
-        "loginLink": "Giriş yap",
-        "avatar": {
-          "hint": "PNG, JPG ya da WEBP · maks. 8MB",
-          "changePhoto": "Fotoğrafı değiştir",
-          "processing": "İşleniyor...",
-          "remove": "Kaldır",
-          "invalidType": "Lütfen bir görsel dosyası seç.",
-          "tooLarge": "Dosya çok büyük (maks. 8MB).",
-          "processingFailed": "Görsel işlenemedi, tekrar dene."
-        }
+        "loginLink": "Giriş yap"
       },
       "setPassword": {
         "title": "Yeni hesabın için şifreni gir",
@@ -461,12 +435,8 @@
         "emailInUse": "Bu e-posta adresi zaten kullanılıyor.",
         "generic": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
         "avatarInvalid": "Profil resmi geçersiz veya çok büyük.",
-        "sessionExpired": "Oturumunuzun süresi doldu. Lütfen tekrar giriş yapın."
-      },
-      "resetEmail": {
-        "subject": "Coreverse Engine parolanızı sıfırlayın",
-        "body": "Coreverse Engine hesabınızın parolasını sıfırlamak için bir istek aldık. Bu isteği siz yaptıysanız, yeni bir parola oluşturmak için aşağıdaki düğmeye tıklayın. Parola sıfırlama isteğinde bulunmadıysanız, bu e-postayı güvenle yok sayabilirsiniz.",
-        "cta": "Parolayı Sıfırla"
+        "sessionExpired": "Oturumunuzun süresi doldu. Lütfen tekrar giriş yapın.",
+        "rateLimited": "Çok fazla istekte bulundunuz. Lütfen birkaç dakika sonra tekrar deneyin."
       }
     }
   },
@@ -497,7 +467,7 @@
       "label": "Changer de langue",
       "english": "Anglaise",
       "turkish": "Turque",
-      "french" : "Français",
+      "french": "Français",
       "german": "Allemande",
       "spanish": "Espagnole",
       "portuguese": "Portugaise",
@@ -580,7 +550,6 @@
       "badge": "Fonctionnalités",
       "title": "Fonctionnalités puissantes",
       "description": "Créez des jeux plus rapidement avec un moteur moderne, extensible et haute performance.",
-
       "videos": [
         {
           "title": "Éditeur moderne",
@@ -603,7 +572,6 @@
           "description": "Exportez vos projets pour Windows, Linux et d'autres plateformes prises en charge."
         }
       ],
-
       "previous": "Précédent",
       "next": "Suivant"
     },
@@ -640,16 +608,7 @@
         "submitting": "Création du compte...",
         "successMessage": "Votre compte a été créé ! Vous pouvez revenir à la page de connexion et vous connecter.",
         "haveAccount": "Vous avez déjà un compte ?",
-        "loginLink": "Se connecter",
-        "avatar": {
-          "hint": "PNG, JPG ou WEBP · max. 8 Mo",
-          "changePhoto": "Changer la photo",
-          "processing": "Traitement en cours...",
-          "remove": "Supprimer",
-          "invalidType": "Veuillez sélectionner un fichier image.",
-          "tooLarge": "Le fichier est trop volumineux (max. 8 Mo).",
-          "processingFailed": "L'image n'a pas pu être traitée. Veuillez réessayer."
-        }
+        "loginLink": "Se connecter"
       },
       "forgotPassword": {
         "title": "Mot de passe oublié ?",
@@ -693,12 +652,8 @@
         "emailInUse": "Cette adresse e-mail est déjà utilisée.",
         "generic": "Une erreur s'est produite. Veuillez réessayer.",
         "avatarInvalid": "La photo de profil est invalide ou trop volumineuse.",
-        "sessionExpired": "Votre session a expiré. Veuillez vous reconnecter."
-      },
-      "resetEmail": {
-        "subject": "Réinitialisez votre mot de passe Coreverse Engine",
-        "body": "Nous avons reçu une demande de réinitialisation du mot de passe de votre compte Coreverse Engine. Si vous êtes à l'origine de cette demande, cliquez sur le bouton ci-dessous pour créer un nouveau mot de passe. Si vous n'avez pas demandé de réinitialisation de mot de passe, vous pouvez ignorer cet e-mail en toute sécurité.",
-        "cta": "Réinitialiser le mot de passe"
+        "sessionExpired": "Votre session a expiré. Veuillez vous reconnecter.",
+        "rateLimited": "Trop de tentatives. Veuillez réessayer dans quelques minutes."
       }
     }
   },
@@ -812,7 +767,6 @@
       "badge": "Funktionen",
       "title": "Leistungsstarke Funktionen",
       "description": "Erstellen Sie Spiele schneller mit einer modernen, erweiterbaren und leistungsstarken Engine.",
-
       "videos": [
         {
           "title": "Moderner Editor",
@@ -835,7 +789,6 @@
           "description": "Exportieren Sie Ihre Projekte für Windows, Linux und andere unterstützte Plattformen."
         }
       ],
-
       "previous": "Zurück",
       "next": "Weiter"
     },
@@ -872,16 +825,7 @@
         "submitting": "Konto wird erstellt...",
         "successMessage": "Dein Konto wurde erstellt! Du kannst zur Anmeldung zurückkehren und dich einloggen.",
         "haveAccount": "Haben Sie bereits ein Konto?",
-        "loginLink": "Anmelden",
-        "avatar": {
-          "hint": "PNG, JPG oder WEBP · max. 8 MB",
-          "changePhoto": "Foto ändern",
-          "processing": "Wird verarbeitet...",
-          "remove": "Entfernen",
-          "invalidType": "Bitte wählen Sie eine Bilddatei aus.",
-          "tooLarge": "Die Datei ist zu groß (max. 8 MB).",
-          "processingFailed": "Das Bild konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut."
-        }
+        "loginLink": "Anmelden"
       },
       "forgotPassword": {
         "title": "Passwort vergessen?",
@@ -925,12 +869,8 @@
         "emailInUse": "Diese E-Mail-Adresse wird bereits verwendet.",
         "generic": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
         "avatarInvalid": "Das Profilbild ist ungültig oder zu groß.",
-        "sessionExpired": "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an."
-      },
-      "resetEmail": {
-        "subject": "Setzen Sie Ihr Coreverse Engine-Passwort zurück",
-        "body": "Wir haben eine Anfrage zum Zurücksetzen des Passworts für Ihr Coreverse Engine-Konto erhalten. Wenn Sie diese Anfrage gestellt haben, klicken Sie auf die Schaltfläche unten, um ein neues Passwort zu erstellen. Falls Sie kein Zurücksetzen des Passworts angefordert haben, können Sie diese E-Mail einfach ignorieren.",
-        "cta": "Passwort zurücksetzen"
+        "sessionExpired": "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an.",
+        "rateLimited": "Zu viele Anfragen. Bitte versuchen Sie es in ein paar Minuten erneut."
       }
     }
   },
@@ -1044,7 +984,6 @@
       "badge": "Características",
       "title": "Características Potentes",
       "description": "Crea juegos más rápido con un motor moderno, extensible y de alto rendimiento.",
-
       "videos": [
         {
           "title": "Editor Moderno",
@@ -1067,7 +1006,6 @@
           "description": "Exporta tus proyectos para Windows, Linux y otras plataformas compatibles."
         }
       ],
-
       "previous": "Anterior",
       "next": "Siguiente"
     },
@@ -1104,16 +1042,7 @@
         "submitting": "Creando cuenta...",
         "successMessage": "¡Tu cuenta ha sido creada! Puedes volver al inicio de sesión e iniciar sesión.",
         "haveAccount": "¿Ya tienes una cuenta?",
-        "loginLink": "Iniciar sesión",
-        "avatar": {
-          "hint": "PNG, JPG o WEBP · máx. 8 MB",
-          "changePhoto": "Cambiar foto",
-          "processing": "Procesando...",
-          "remove": "Eliminar",
-          "invalidType": "Por favor, selecciona un archivo de imagen.",
-          "tooLarge": "El archivo es demasiado grande (máx. 8 MB).",
-          "processingFailed": "No se pudo procesar la imagen. Inténtalo de nuevo."
-        }
+        "loginLink": "Iniciar sesión"
       },
       "forgotPassword": {
         "title": "¿Olvidaste tu contraseña?",
@@ -1157,12 +1086,8 @@
         "emailInUse": "Este correo electrónico ya está en uso.",
         "generic": "Algo salió mal. Por favor, inténtalo de nuevo.",
         "avatarInvalid": "La imagen de perfil no es válida o es demasiado grande.",
-        "sessionExpired": "Tu sesión ha caducado. Por favor, inicia sesión de nuevo."
-      },
-      "resetEmail": {
-        "subject": "Restablece tu contraseña de Coreverse Engine",
-        "body": "Hemos recibido una solicitud para restablecer la contraseña de tu cuenta de Coreverse Engine. Si realizaste esta solicitud, haz clic en el botón de abajo para crear una nueva contraseña. Si no solicitaste el restablecimiento de la contraseña, puedes ignorar este correo electrónico con seguridad.",
-        "cta": "Restablecer contraseña"
+        "sessionExpired": "Tu sesión ha caducado. Por favor, inicia sesión de nuevo.",
+        "rateLimited": "Demasiadas solicitudes. Inténtalo de nuevo en unos minutos."
       }
     }
   },
@@ -1276,7 +1201,6 @@
       "badge": "Funcionalidades",
       "title": "Funcionalidades Poderosas",
       "description": "Crie jogos mais rapidamente com um motor moderno, extensível e de elevado desempenho.",
-
       "videos": [
         {
           "title": "Editor Moderno",
@@ -1299,7 +1223,6 @@
           "description": "Exporte os seus projetos para Windows, Linux e outras plataformas suportadas."
         }
       ],
-
       "previous": "Anterior",
       "next": "Seguinte"
     },
@@ -1336,16 +1259,7 @@
         "submitting": "A criar conta...",
         "successMessage": "A tua conta foi criada! Podes voltar ao início de sessão e iniciar sessão.",
         "haveAccount": "Já tem uma conta?",
-        "loginLink": "Iniciar sessão",
-        "avatar": {
-          "hint": "PNG, JPG ou WEBP · máx. 8 MB",
-          "changePhoto": "Alterar fotografia",
-          "processing": "A processar...",
-          "remove": "Remover",
-          "invalidType": "Selecione um ficheiro de imagem.",
-          "tooLarge": "O ficheiro é demasiado grande (máx. 8 MB).",
-          "processingFailed": "Não foi possível processar a imagem. Tente novamente."
-        }
+        "loginLink": "Iniciar sessão"
       },
       "forgotPassword": {
         "title": "Esqueceu-se da sua palavra-passe?",
@@ -1389,12 +1303,8 @@
         "emailInUse": "Este endereço de e-mail já está a ser utilizado.",
         "generic": "Ocorreu um erro. Tente novamente.",
         "avatarInvalid": "A fotografia de perfil é inválida ou demasiado grande.",
-        "sessionExpired": "A sua sessão expirou. Inicie sessão novamente."
-      },
-      "resetEmail": {
-        "subject": "Redefina a sua palavra-passe do Coreverse Engine",
-        "body": "Recebemos um pedido para redefinir a palavra-passe da sua conta Coreverse Engine. Se fez este pedido, clique no botão abaixo para criar uma nova palavra-passe. Se não solicitou a redefinição da palavra-passe, pode ignorar este e-mail com segurança.",
-        "cta": "Redefinir palavra-passe"
+        "sessionExpired": "A sua sessão expirou. Inicie sessão novamente.",
+        "rateLimited": "Demasiados pedidos. Tente novamente dentro de alguns minutos."
       }
     }
   },
@@ -1508,7 +1418,6 @@
       "badge": "功能",
       "title": "强大功能",
       "description": "使用现代化、可扩展且高性能的引擎，更快地构建游戏。",
-
       "videos": [
         {
           "title": "现代编辑器",
@@ -1531,7 +1440,6 @@
           "description": "将您的项目导出到 Windows、Linux 以及其他受支持的平台。"
         }
       ],
-
       "previous": "上一项",
       "next": "下一项"
     },
@@ -1568,16 +1476,7 @@
         "submitting": "正在创建账户...",
         "successMessage": "你的账户已创建！你可以返回登录页面并登录。",
         "haveAccount": "已经有账户了？",
-        "loginLink": "登录",
-        "avatar": {
-          "hint": "PNG、JPG 或 WEBP · 最大 8MB",
-          "changePhoto": "更换照片",
-          "processing": "处理中...",
-          "remove": "移除",
-          "invalidType": "请选择图片文件。",
-          "tooLarge": "文件过大（最大 8MB）。",
-          "processingFailed": "图片无法处理。请重试。"
-        }
+        "loginLink": "登录"
       },
       "forgotPassword": {
         "title": "忘记密码？",
@@ -1621,12 +1520,8 @@
         "emailInUse": "此电子邮箱已被使用。",
         "generic": "发生错误。请重试。",
         "avatarInvalid": "头像无效或文件过大。",
-        "sessionExpired": "您的会话已过期。请重新登录。"
-      },
-      "resetEmail": {
-        "subject": "重置您的 Coreverse Engine 密码",
-        "body": "我们收到了重置您的 Coreverse Engine 账户密码的请求。如果这是您本人发起的请求，请点击下方按钮创建新密码。如果您没有请求重置密码，可以放心忽略此邮件。",
-        "cta": "重置密码"
+        "sessionExpired": "您的会话已过期。请重新登录。",
+        "rateLimited": "请求过于频繁，请几分钟后再试。"
       }
     }
   },
@@ -1740,7 +1635,6 @@
       "badge": "Функции",
       "title": "Мощные возможности",
       "description": "Создавайте игры быстрее с помощью современного, расширяемого и высокопроизводительного движка.",
-
       "videos": [
         {
           "title": "Современный редактор",
@@ -1763,7 +1657,6 @@
           "description": "Экспортируйте свои проекты для Windows, Linux и других поддерживаемых платформ."
         }
       ],
-
       "previous": "Предыдущий",
       "next": "Следующий"
     },
@@ -1800,16 +1693,7 @@
         "submitting": "Создание аккаунта...",
         "successMessage": "Ваш аккаунт создан! Вы можете вернуться к входу и войти в систему.",
         "haveAccount": "Уже есть аккаунт?",
-        "loginLink": "Войти",
-        "avatar": {
-          "hint": "PNG, JPG или WEBP · макс. 8 МБ",
-          "changePhoto": "Изменить фото",
-          "processing": "Обработка...",
-          "remove": "Удалить",
-          "invalidType": "Пожалуйста, выберите файл изображения.",
-          "tooLarge": "Файл слишком большой (макс. 8 МБ).",
-          "processingFailed": "Не удалось обработать изображение. Пожалуйста, попробуйте снова."
-        }
+        "loginLink": "Войти"
       },
       "forgotPassword": {
         "title": "Забыли пароль?",
@@ -1853,12 +1737,8 @@
         "emailInUse": "Этот адрес электронной почты уже используется.",
         "generic": "Что-то пошло не так. Пожалуйста, попробуйте снова.",
         "avatarInvalid": "Изображение профиля недействительно или слишком большое.",
-        "sessionExpired": "Срок действия вашей сессии истёк. Пожалуйста, войдите снова."
-      },
-      "resetEmail": {
-        "subject": "Сбросьте пароль Coreverse Engine",
-        "body": "Мы получили запрос на сброс пароля для вашей учетной записи Coreverse Engine. Если вы отправили этот запрос, нажмите кнопку ниже, чтобы создать новый пароль. Если вы не запрашивали сброс пароля, можете спокойно проигнорировать это письмо.",
-        "cta": "Сбросить пароль"
+        "sessionExpired": "Срок действия вашей сессии истёк. Пожалуйста, войдите снова.",
+        "rateLimited": "Слишком много запросов. Повторите попытку через несколько минут."
       }
     }
   },
@@ -1972,7 +1852,6 @@
       "badge": "機能",
       "title": "強力な機能",
       "description": "モダンで拡張性が高く、高性能なエンジンでゲーム開発をより迅速に行えます。",
-
       "videos": [
         {
           "title": "モダンエディター",
@@ -1995,7 +1874,6 @@
           "description": "Windows、Linux、およびその他の対応プラットフォーム向けにプロジェクトをエクスポートできます。"
         }
       ],
-
       "previous": "前へ",
       "next": "次へ"
     },
@@ -2032,16 +1910,7 @@
         "submitting": "アカウントを作成中...",
         "successMessage": "アカウントが作成されました！ログイン画面に戻ってサインインできます。",
         "haveAccount": "すでにアカウントをお持ちですか？",
-        "loginLink": "サインイン",
-        "avatar": {
-          "hint": "PNG、JPG、またはWEBP・最大8MB",
-          "changePhoto": "写真を変更",
-          "processing": "処理中...",
-          "remove": "削除",
-          "invalidType": "画像ファイルを選択してください。",
-          "tooLarge": "ファイルが大きすぎます（最大8MB）。",
-          "processingFailed": "画像を処理できませんでした。もう一度お試しください。"
-        }
+        "loginLink": "サインイン"
       },
       "forgotPassword": {
         "title": "パスワードをお忘れですか？",
@@ -2085,12 +1954,8 @@
         "emailInUse": "このメールアドレスはすでに使用されています。",
         "generic": "問題が発生しました。もう一度お試しください。",
         "avatarInvalid": "プロフィール画像が無効であるか、サイズが大きすぎます。",
-        "sessionExpired": "セッションの有効期限が切れました。もう一度サインインしてください。"
-      },
-      "resetEmail": {
-        "subject": "Coreverse Engineのパスワードをリセット",
-        "body": "Coreverse Engineアカウントのパスワードをリセットするリクエストを受け付けました。このリクエストを行った場合は、以下のボタンをクリックして新しいパスワードを作成してください。パスワードのリセットをリクエストしていない場合は、このメールは無視していただいて問題ありません。",
-        "cta": "パスワードをリセット"
+        "sessionExpired": "セッションの有効期限が切れました。もう一度サインインしてください。",
+        "rateLimited": "リクエストが多すぎます。数分後にもう一度お試しください。"
       }
     }
   },
@@ -2204,7 +2069,6 @@
       "badge": "기능",
       "title": "강력한 기능",
       "description": "현대적이고 확장 가능하며 고성능인 엔진으로 게임을 더 빠르게 제작하세요.",
-
       "videos": [
         {
           "title": "현대적인 에디터",
@@ -2227,7 +2091,6 @@
           "description": "Windows, Linux 및 기타 지원되는 플랫폼으로 프로젝트를 내보내세요."
         }
       ],
-
       "previous": "이전",
       "next": "다음"
     },
@@ -2264,16 +2127,7 @@
         "submitting": "계정 생성 중...",
         "successMessage": "계정이 생성되었습니다! 로그인 화면으로 돌아가 로그인할 수 있습니다.",
         "haveAccount": "이미 계정이 있으신가요?",
-        "loginLink": "로그인",
-        "avatar": {
-          "hint": "PNG, JPG 또는 WEBP · 최대 8MB",
-          "changePhoto": "사진 변경",
-          "processing": "처리 중...",
-          "remove": "제거",
-          "invalidType": "이미지 파일을 선택해 주세요.",
-          "tooLarge": "파일이 너무 큽니다(최대 8MB).",
-          "processingFailed": "이미지를 처리할 수 없습니다. 다시 시도해 주세요."
-        }
+        "loginLink": "로그인"
       },
       "forgotPassword": {
         "title": "비밀번호를 잊으셨나요?",
@@ -2317,12 +2171,8 @@
         "emailInUse": "이미 사용 중인 이메일입니다.",
         "generic": "문제가 발생했습니다. 다시 시도해 주세요.",
         "avatarInvalid": "프로필 사진이 유효하지 않거나 용량이 너무 큽니다.",
-        "sessionExpired": "세션이 만료되었습니다. 다시 로그인해 주세요."
-      },
-      "resetEmail": {
-        "subject": "Coreverse Engine 비밀번호 재설정",
-        "body": "Coreverse Engine 계정의 비밀번호를 재설정해 달라는 요청을 받았습니다. 이 요청을 직접 하셨다면 아래 버튼을 클릭하여 새 비밀번호를 생성해 주세요. 비밀번호 재설정을 요청하지 않으셨다면 이 이메일은 무시하셔도 됩니다.",
-        "cta": "비밀번호 재설정"
+        "sessionExpired": "세션이 만료되었습니다. 다시 로그인해 주세요.",
+        "rateLimited": "요청이 너무 많습니다. 몇 분 후 다시 시도해 주세요."
       }
     }
   },
@@ -2436,7 +2286,6 @@
       "badge": "Funkcje",
       "title": "Potężne funkcje",
       "description": "Twórz gry szybciej dzięki nowoczesnemu, rozszerzalnemu i wysokowydajnemu silnikowi.",
-
       "videos": [
         {
           "title": "Nowoczesny edytor",
@@ -2459,7 +2308,6 @@
           "description": "Eksportuj swoje projekty na Windows, Linux i inne obsługiwane platformy."
         }
       ],
-
       "previous": "Poprzedni",
       "next": "Następny"
     },
@@ -2496,16 +2344,7 @@
         "submitting": "Tworzenie konta...",
         "successMessage": "Konto zostało utworzone! Możesz wrócić do logowania i zalogować się.",
         "haveAccount": "Masz już konto?",
-        "loginLink": "Zaloguj się",
-        "avatar": {
-          "hint": "PNG, JPG lub WEBP · maks. 8 MB",
-          "changePhoto": "Zmień zdjęcie",
-          "processing": "Przetwarzanie...",
-          "remove": "Usuń",
-          "invalidType": "Wybierz plik obrazu.",
-          "tooLarge": "Plik jest za duży (maks. 8 MB).",
-          "processingFailed": "Nie udało się przetworzyć obrazu. Spróbuj ponownie."
-        }
+        "loginLink": "Zaloguj się"
       },
       "forgotPassword": {
         "title": "Zapomniałeś hasła?",
@@ -2549,12 +2388,8 @@
         "emailInUse": "Ten adres e-mail jest już używany.",
         "generic": "Coś poszło nie tak. Spróbuj ponownie.",
         "avatarInvalid": "Zdjęcie profilowe jest nieprawidłowe lub zbyt duże.",
-        "sessionExpired": "Twoja sesja wygasła. Zaloguj się ponownie."
-      },
-      "resetEmail": {
-        "subject": "Zresetuj hasło do Coreverse Engine",
-        "body": "Otrzymaliśmy prośbę o zresetowanie hasła do Twojego konta Coreverse Engine. Jeśli to Ty wysłałeś tę prośbę, kliknij poniższy przycisk, aby utworzyć nowe hasło. Jeśli nie prosiłeś o zresetowanie hasła, możesz bezpiecznie zignorować tę wiadomość e-mail.",
-        "cta": "Zresetuj hasło"
+        "sessionExpired": "Twoja sesja wygasła. Zaloguj się ponownie.",
+        "rateLimited": "Zbyt wiele żądań. Spróbuj ponownie za kilka minut."
       }
     }
   },
@@ -2668,7 +2503,6 @@
       "badge": "विशेषताएँ",
       "title": "शक्तिशाली विशेषताएँ",
       "description": "एक आधुनिक, विस्तारयोग्य और उच्च-प्रदर्शन इंजन के साथ तेज़ी से गेम बनाएँ।",
-
       "videos": [
         {
           "title": "आधुनिक संपादक",
@@ -2691,7 +2525,6 @@
           "description": "अपने प्रोजेक्ट्स को Windows, Linux और अन्य समर्थित प्लेटफ़ॉर्म के लिए निर्यात करें।"
         }
       ],
-
       "previous": "पिछला",
       "next": "अगला"
     },
@@ -2728,16 +2561,7 @@
         "submitting": "खाता बनाया जा रहा है...",
         "successMessage": "आपका खाता बन गया है! आप लॉगिन पेज पर वापस जाकर साइन इन कर सकते हैं।",
         "haveAccount": "क्या आपका पहले से खाता है?",
-        "loginLink": "साइन इन करें",
-        "avatar": {
-          "hint": "PNG, JPG या WEBP · अधिकतम 8MB",
-          "changePhoto": "फ़ोटो बदलें",
-          "processing": "प्रोसेस किया जा रहा है...",
-          "remove": "हटाएँ",
-          "invalidType": "कृपया एक छवि फ़ाइल चुनें।",
-          "tooLarge": "फ़ाइल बहुत बड़ी है (अधिकतम 8MB)।",
-          "processingFailed": "छवि को प्रोसेस नहीं किया जा सका। कृपया पुनः प्रयास करें।"
-        }
+        "loginLink": "साइन इन करें"
       },
       "forgotPassword": {
         "title": "क्या आप अपना पासवर्ड भूल गए?",
@@ -2781,104 +2605,100 @@
         "emailInUse": "यह ईमेल पहले से उपयोग में है।",
         "generic": "कुछ गलत हो गया। कृपया फिर से प्रयास करें।",
         "avatarInvalid": "प्रोफ़ाइल चित्र अमान्य है या बहुत बड़ा है।",
-        "sessionExpired": "आपका सत्र समाप्त हो गया है। कृपया फिर से साइन इन करें।"
-      },
-      "resetEmail": {
-        "subject": "अपना Coreverse Engine पासवर्ड रीसेट करें",
-        "body": "हमें आपके Coreverse Engine खाते का पासवर्ड रीसेट करने का अनुरोध प्राप्त हुआ है। यदि आपने यह अनुरोध किया है, तो नया पासवर्ड बनाने के लिए नीचे दिए गए बटन पर क्लिक करें। यदि आपने पासवर्ड रीसेट का अनुरोध नहीं किया है, तो आप इस ईमेल को सुरक्षित रूप से अनदेखा कर सकते हैं।",
-        "cta": "पासवर्ड रीसेट करें"
+        "sessionExpired": "आपका सत्र समाप्त हो गया है। कृपया फिर से साइन इन करें।",
+        "rateLimited": "बहुत अधिक अनुरोध। कृपया कुछ मिनट बाद पुनः प्रयास करें।"
       }
     }
   },
   "sa": {
     "brand": {
       "name": "Coreverse Engine",
-      "tagline": "\u200Fالنواة والكون"
+      "tagline": "‏النواة والكون"
     },
     "navigation": {
-      "main": "\u200Fالرئيسية",
-      "install": "\u200Fالتثبيت",
-      "features": "\u200Fسمات",
-      "community": "\u200Fالمجتمع",
-      "faq": "\u200Fالأسئلة الشائعة",
-      "login": "\u200Fتسجيل الدخول"
+      "main": "‏الرئيسية",
+      "install": "‏التثبيت",
+      "features": "‏سمات",
+      "community": "‏المجتمع",
+      "faq": "‏الأسئلة الشائعة",
+      "login": "‏تسجيل الدخول"
     },
     "userMenu": {
-      "userMenu": "\u200Fقائمة المستخدم",
-      "settings": "\u200Fالإعدادات",
-      "logOut": "\u200Fتسجيل الخروج",
-      "loggingOut": "\u200Fجاري تسجيل الخروج"
+      "userMenu": "‏قائمة المستخدم",
+      "settings": "‏الإعدادات",
+      "logOut": "‏تسجيل الخروج",
+      "loggingOut": "‏جاري تسجيل الخروج"
     },
     "theme": {
-      "light": "\u200Fالتبديل إلى الوضع الفاتح",
-      "dark": "\u200Fالتبديل إلى الوضع الداكن"
+      "light": "‏التبديل إلى الوضع الفاتح",
+      "dark": "‏التبديل إلى الوضع الداكن"
     },
     "language": {
-      "label": "\u200Fتغيير اللغة",
-      "english": "\u200Fالإنجليزية",
-      "turkish": "\u200Fالتركية",
-      "french": "\u200Fالفرنسية",
-      "german": "\u200Fالألمانية",
-      "spanish": "\u200Fالإسبانية",
-      "portuguese": "\u200Fالبرتغالية",
-      "russian": "\u200Fالروسية",
-      "chinese": "\u200Fالصينية",
-      "japanese": "\u200Fاليابانية",
-      "korean": "\u200Fالكورية",
-      "polish": "\u200Fالبولندية",
-      "indian": "\u200Fالهندية",
-      "arabic": "\u200Fالعربية"
+      "label": "‏تغيير اللغة",
+      "english": "‏الإنجليزية",
+      "turkish": "‏التركية",
+      "french": "‏الفرنسية",
+      "german": "‏الألمانية",
+      "spanish": "‏الإسبانية",
+      "portuguese": "‏البرتغالية",
+      "russian": "‏الروسية",
+      "chinese": "‏الصينية",
+      "japanese": "‏اليابانية",
+      "korean": "‏الكورية",
+      "polish": "‏البولندية",
+      "indian": "‏الهندية",
+      "arabic": "‏العربية"
     },
     "home": {
-      "eyebrow": "\u200Fمحرك ألعاب من الجيل التالي",
-      "title": "\u200Fابنِ أكوانًا غامرة باستخدام محرك سريع وحديث",
-      "description": "\u200Fيقدم \u2066Coreverse Engine\u2069، بفضل أنظمة العرض التي تدعم \u2066Vulkan\u2069 و\u2066OpenGL\u2069، للمطورين إمكانية التطوير باستخدام \u2066C\u2069 و\u2066C++\u2069 و\u2066C#\u2069 و\u2066Dart\u2069 و\u2066Java\u2069 و\u2066JavaScript\u2069 و\u2066Kotlin\u2069\u2066Rust\u2069 و\u2066Swift\u2069 و\u2066TypeScript\u2069، كما يوفر تحسينات متقدمة على النواة وإمكانية إنشاء عوالم بأنظمة فيزياء مختلفة",
-      "primaryAction": "\u200Fابدأ البناء",
-      "secondaryAction": "\u200Fاستكشف الميزات",
-      "previewLabel": "\u200Fمعاينة وقت التشغيل",
-      "labName": "\u200F\u2066Coreverse\u2069مختبر",
-      "liveStatus": "\u200Fمباشر",
+      "eyebrow": "‏محرك ألعاب من الجيل التالي",
+      "title": "‏ابنِ أكوانًا غامرة باستخدام محرك سريع وحديث",
+      "description": "‏يقدم ⁦Coreverse Engine⁩، بفضل أنظمة العرض التي تدعم ⁦Vulkan⁩ و⁦OpenGL⁩، للمطورين إمكانية التطوير باستخدام ⁦C⁩ و⁦C++⁩ و⁦C#⁩ و⁦Dart⁩ و⁦Java⁩ و⁦JavaScript⁩ و⁦Kotlin⁩⁦Rust⁩ و⁦Swift⁩ و⁦TypeScript⁩، كما يوفر تحسينات متقدمة على النواة وإمكانية إنشاء عوالم بأنظمة فيزياء مختلفة",
+      "primaryAction": "‏ابدأ البناء",
+      "secondaryAction": "‏استكشف الميزات",
+      "previewLabel": "‏معاينة وقت التشغيل",
+      "labName": "‏⁦Coreverse⁩مختبر",
+      "liveStatus": "‏مباشر",
       "stats": [
         {
           "value": "120Hz",
-          "label": "\u200Fهدف وقت تشغيل سريع الاستجابة"
+          "label": "‏هدف وقت تشغيل سريع الاستجابة"
         },
         {
-          "value": "\u200Fمعياري",
-          "label": "\u200Fطبقات العرض وطريقة اللعب"
+          "value": "‏معياري",
+          "label": "‏طبقات العرض وطريقة اللعب"
         },
         {
-          "value": "\u200Fالمبدع أولًا",
-          "label": "\u200Fأدوات مصممة للتكرار والتحسين"
+          "value": "‏المبدع أولًا",
+          "label": "‏أدوات مصممة للتكرار والتحسين"
         }
       ]
     },
     "installPanel": {
-      "eyebrow": "\u200F\u2066Coreverse\u2069تثبيت",
-      "title": "\u200Fاختر مسار الإصدار الخاص بك",
-      "description": "\u200Fحدد نظام التشغيل، واختر واجهة برمجة الرسومات، ثم نزّل الحزمة التجريبية المطابقة",
-      "osTitle": "\u200Fحدد نظام التشغيل",
-      "osDescription": "\u200F\u2066Coreverse Engine\u2069ابدأ بالمنصة التي سيعمل عليها",
-      "graphicsTitle": "\u200Fحدد واجهة برمجة الرسومات",
-      "graphicsDescription": "\u200Fاختر \u2066Vulkan\u2069 أو \u2066OpenGL\u2069 لنظام التشغيل المحدد",
-      "downloadTitle": "\u200Fالتنزيل جاهز",
-      "downloadDescription": "\u200Fالتنزيل الحالي عبارة عن ملف نصي تجريبي. يمكن استبداله بالحزم الفعلية لاحقًا",
-      "selectedOs": "\u200Fنظام التشغيل",
-      "selectedGraphics": "\u200Fواجهة برمجة الرسومات",
-      "downloadAction": "\u200Fتنزيل الملف النصي",
-      "back": "\u200Fرجوع",
+      "eyebrow": "‏⁦Coreverse⁩تثبيت",
+      "title": "‏اختر مسار الإصدار الخاص بك",
+      "description": "‏حدد نظام التشغيل، واختر واجهة برمجة الرسومات، ثم نزّل الحزمة التجريبية المطابقة",
+      "osTitle": "‏حدد نظام التشغيل",
+      "osDescription": "‏⁦Coreverse Engine⁩ابدأ بالمنصة التي سيعمل عليها",
+      "graphicsTitle": "‏حدد واجهة برمجة الرسومات",
+      "graphicsDescription": "‏اختر ⁦Vulkan⁩ أو ⁦OpenGL⁩ لنظام التشغيل المحدد",
+      "downloadTitle": "‏التنزيل جاهز",
+      "downloadDescription": "‏التنزيل الحالي عبارة عن ملف نصي تجريبي. يمكن استبداله بالحزم الفعلية لاحقًا",
+      "selectedOs": "‏نظام التشغيل",
+      "selectedGraphics": "‏واجهة برمجة الرسومات",
+      "downloadAction": "‏تنزيل الملف النصي",
+      "back": "‏رجوع",
       "steps": {
         "os": {
-          "title": "\u200Fنظام التشغيل",
-          "description": "\u200F\u2066Windows\u2069 أو \u2066Linux\u2069 أو \u2066macOS\u2069"
+          "title": "‏نظام التشغيل",
+          "description": "‏⁦Windows⁩ أو ⁦Linux⁩ أو ⁦macOS⁩"
         },
         "graphics": {
-          "title": "\u200Fواجهة برمجة الرسومات",
-          "description": "\u200F\u2066Vulkan\u2069 أو \u2066OpenGL\u2069"
+          "title": "‏واجهة برمجة الرسومات",
+          "description": "‏⁦Vulkan⁩ أو ⁦OpenGL⁩"
         },
         "download": {
-          "title": "\u200Fالتنزيل",
-          "description": "\u200Fملف نصي مُنشأ"
+          "title": "‏التنزيل",
+          "description": "‏ملف نصي مُنشأ"
         }
       },
       "options": {
@@ -2890,135 +2710,120 @@
       }
     },
     "communityPanel": {
-      "search": "\u200Fبحث",
-      "discussionBadge": "\u200Fالمجتمع",
-      "discussionTitle": "\u200Fالنقاشات والأسئلة الرائجة",
-      "eventsBadge": "\u200Fالأحدث",
-      "eventsTitle": "\u200Fالأحداث الأخيرة"
+      "search": "‏بحث",
+      "discussionBadge": "‏المجتمع",
+      "discussionTitle": "‏النقاشات والأسئلة الرائجة",
+      "eventsBadge": "‏الأحدث",
+      "eventsTitle": "‏الأحداث الأخيرة"
     },
     "featuresPanel": {
-      "badge": "\u200Fالميزات",
-      "title": "\u200Fميزات قوية",
-      "description": "\u200Fأنشئ الألعاب بشكل أسرع باستخدام محرك حديث، قابل للتوسعة، وعالي الأداء",
-
+      "badge": "‏الميزات",
+      "title": "‏ميزات قوية",
+      "description": "‏أنشئ الألعاب بشكل أسرع باستخدام محرك حديث، قابل للتوسعة، وعالي الأداء",
       "videos": [
         {
-          "title": "\u200Fمحرر حديث",
-          "description": "\u200Fأنشئ عوالم غامرة باستخدام محرر بديهي مصمم لتحقيق أقصى إنتاجية"
+          "title": "‏محرر حديث",
+          "description": "‏أنشئ عوالم غامرة باستخدام محرر بديهي مصمم لتحقيق أقصى إنتاجية"
         },
         {
-          "title": "\u200Fعارض عالي الأداء",
-          "description": "\u200Fاستمتع بالتصيير الفوري المدعوم بتقنيتي \u2066Vulkan\u2069 و\u2066OpenGL\u2069"
+          "title": "‏عارض عالي الأداء",
+          "description": "‏استمتع بالتصيير الفوري المدعوم بتقنيتي ⁦Vulkan⁩ و⁦OpenGL⁩"
         },
         {
-          "title": "\u200Fبرمجة نصية مرنة",
-          "description": "\u200Fطوّر أسلوب اللعب باستخدام \u2066Rust\u2069 و\u2066C++\u2069 و\u2069Python\u2069 وغيرها من اللغات المدعومة"
+          "title": "‏برمجة نصية مرنة",
+          "description": "‏طوّر أسلوب اللعب باستخدام ⁦Rust⁩ و⁦C++⁩ و⁩Python⁩ وغيرها من اللغات المدعومة"
         },
         {
-          "title": "\u200Fفيزياء متقدمة",
-          "description": "\u200Fأنشئ محاكاة واقعية باستخدام أنظمة فيزياء معيارية وقابلة للتخصيص"
+          "title": "‏فيزياء متقدمة",
+          "description": "‏أنشئ محاكاة واقعية باستخدام أنظمة فيزياء معيارية وقابلة للتخصيص"
         },
         {
-          "title": "\u200Fالنشر عبر المنصات",
-          "description": "\u200Fصدّر مشاريعك إلى \u2066Windows\u2069 و\u2066Linux\u2069 وغيرها من المنصات المدعومة"
+          "title": "‏النشر عبر المنصات",
+          "description": "‏صدّر مشاريعك إلى ⁦Windows⁩ و⁦Linux⁩ وغيرها من المنصات المدعومة"
         }
       ],
-
-      "previous": "\u200Fالسابق",
-      "next": "\u200Fالتالي"
+      "previous": "‏السابق",
+      "next": "‏التالي"
     },
     "auth": {
       "login": {
-        "title": "\u200Fمرحبًا بعودتك",
-        "subtitle": "\u200Fسجّل الدخول للمتابعة",
-        "emailLabel": "\u200Fالبريد الإلكتروني",
+        "title": "‏مرحبًا بعودتك",
+        "subtitle": "‏سجّل الدخول للمتابعة",
+        "emailLabel": "‏البريد الإلكتروني",
         "emailPlaceholder": "example@mail.com",
-        "passwordLabel": "\u200Fكلمة المرور",
+        "passwordLabel": "‏كلمة المرور",
         "passwordPlaceholder": "••••••••",
-        "rememberMe": "\u200Fتذكرني",
-        "forgotPassword": "\u200Fنسيت كلمة المرور",
-        "submit": "\u200Fتسجيل الدخول",
-        "submitting": "\u200Fجارٍ تسجيل الدخول",
-        "noAccountDivider": "\u200Fليس لديك حساب؟",
-        "noAccount": "\u200Fليس لديك حساب بعد؟",
-        "registerLink": "\u200Fإنشاء حساب",
-        "orContinueWith": "\u200Fأو تابع باستخدام"
+        "rememberMe": "‏تذكرني",
+        "forgotPassword": "‏نسيت كلمة المرور",
+        "submit": "‏تسجيل الدخول",
+        "submitting": "‏جارٍ تسجيل الدخول",
+        "noAccountDivider": "‏ليس لديك حساب؟",
+        "noAccount": "‏ليس لديك حساب بعد؟",
+        "registerLink": "‏إنشاء حساب",
+        "orContinueWith": "‏أو تابع باستخدام"
       },
       "register": {
-        "title": "\u200Fإنشاء حساب",
-        "subtitle": "\u200F\u2066Coreverse Engine\u2069انضم إلى مجتمع",
-        "usernameLabel": "\u200Fاسم المستخدم",
+        "title": "‏إنشاء حساب",
+        "subtitle": "‏⁦Coreverse Engine⁩انضم إلى مجتمع",
+        "usernameLabel": "‏اسم المستخدم",
         "usernamePlaceholder": "username",
-        "emailLabel": "\u200Fالبريد الإلكتروني",
+        "emailLabel": "‏البريد الإلكتروني",
         "emailPlaceholder": "example@mail.com",
-        "passwordLabel": "\u200Fكلمة المرور",
+        "passwordLabel": "‏كلمة المرور",
         "passwordPlaceholder": "••••••••",
-        "confirmPasswordLabel": "\u200Fتأكيد كلمة المرور",
+        "confirmPasswordLabel": "‏تأكيد كلمة المرور",
         "confirmPasswordPlaceholder": "••••••••",
-        "acceptTerms": "\u200F \u2066<terms>\u2069شروط الخدمة\u2066</terms>\u2069أوافق على",
-        "submit": "\u200Fإنشاء الحساب",
-        "submitting": "\u200Fجارٍ إنشاء الحساب",
-        "successMessage": "\u200F\u2066.\u2069يمكنك الآن العودة إلى صفحة تسجيل الدخول وتسجيل الدخول إلى حسابك\u2066!\u2069تم إنشاء حسابك بنجاح",
-        "haveAccount": "\u200Fهل لديك حساب بالفعل؟",
-        "loginLink": "\u200Fتسجيل الدخول",
-        "avatar": {
-          "hint": "\u200F\u2066PNG\u2069 أو \u2066JPG\u2069 أو \u2066WEBP\u2069 \u2066·\u2069 ميجابايت\u2066 8\u2069الحد الأقصى ",
-          "changePhoto": "\u200Fتغيير الصورة",
-          "processing": "\u200Fجارٍ المعالجة",
-          "remove": "\u200Fإزالة",
-          "invalidType": "\u200Fيرجى اختيار ملف صورة",
-          "tooLarge": "\u200F\u2066.(\u2069ميجابايت\u20668\u2069الحد الأقصى\u2066)\u2069الملف كبير جدًا",
-          "processingFailed": "\u200F\u2066.\u2069يُرجى المحاولة مرة أخرى \u2066.\u2069تعذّرت معالجة الصورة"
-        }
+        "acceptTerms": "‏ ⁦<terms>⁩شروط الخدمة⁦</terms>⁩أوافق على",
+        "submit": "‏إنشاء الحساب",
+        "submitting": "‏جارٍ إنشاء الحساب",
+        "successMessage": "‏⁦.⁩يمكنك الآن العودة إلى صفحة تسجيل الدخول وتسجيل الدخول إلى حسابك⁦!⁩تم إنشاء حسابك بنجاح",
+        "haveAccount": "‏هل لديك حساب بالفعل؟",
+        "loginLink": "‏تسجيل الدخول"
       },
       "forgotPassword": {
-        "title": "\u200Fهل نسيت كلمة المرور؟",
-        "subtitle": "\u200Fأدخل عنوان بريدك الإلكتروني وسنرسل إليك رابطًا لإعادة تعيين كلمة المرور",
-        "emailLabel": "\u200Fالبريد الإلكتروني",
+        "title": "‏هل نسيت كلمة المرور؟",
+        "subtitle": "‏أدخل عنوان بريدك الإلكتروني وسنرسل إليك رابطًا لإعادة تعيين كلمة المرور",
+        "emailLabel": "‏البريد الإلكتروني",
         "emailPlaceholder": "example@mail.com",
-        "submit": "\u200Fإرسال رابط إعادة التعيين",
-        "submitting": "\u200Fجارٍ الإرسال",
-        "successMessage": "\u200Fتم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني",
-        "backToLogin": "\u200Fالعودة إلى تسجيل الدخول"
+        "submit": "‏إرسال رابط إعادة التعيين",
+        "submitting": "‏جارٍ الإرسال",
+        "successMessage": "‏تم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني",
+        "backToLogin": "‏العودة إلى تسجيل الدخول"
       },
       "resetPassword": {
-        "title": "\u200Fتعيين كلمة مرور جديدة",
-        "subtitle": "\u200Fأنشئ كلمة مرور جديدة لحسابك",
-        "passwordLabel": "\u200Fكلمة المرور الجديدة",
-        "confirmPasswordLabel": "\u200Fتأكيد كلمة المرور الجديدة",
-        "submit": "\u200Fتحديث كلمة المرور",
-        "submitting": "\u200F\u2066...\u2069جارٍ التحديث",
+        "title": "‏تعيين كلمة مرور جديدة",
+        "subtitle": "‏أنشئ كلمة مرور جديدة لحسابك",
+        "passwordLabel": "‏كلمة المرور الجديدة",
+        "confirmPasswordLabel": "‏تأكيد كلمة المرور الجديدة",
+        "submit": "‏تحديث كلمة المرور",
+        "submitting": "‏⁦...⁩جارٍ التحديث",
         "emailLabel": "example@mail.com",
-        "invalidLinkTitle": "\u200Fرابط غير صالح أو منتهي الصلاحية",
-        "invalidLinkSubtitle": "\u200Fرابط إعادة تعيين كلمة المرور هذا غير صالح أو انتهت صلاحيته. يُرجى طلب رسالة جديدة لإعادة تعيين كلمة المرور",
-        "requestNewLink": "\u200Fطلب رابط جديد لإعادة التعيين"
+        "invalidLinkTitle": "‏رابط غير صالح أو منتهي الصلاحية",
+        "invalidLinkSubtitle": "‏رابط إعادة تعيين كلمة المرور هذا غير صالح أو انتهت صلاحيته. يُرجى طلب رسالة جديدة لإعادة تعيين كلمة المرور",
+        "requestNewLink": "‏طلب رابط جديد لإعادة التعيين"
       },
       "oauth": {
-        "continueWithGoogle": "\u200F\u2066Google\u2069المتابعة باستخدام",
-        "continueWithGithub": "\u200F\u2066GitHub\u2069المتابعة باستخدام"
+        "continueWithGoogle": "‏⁦Google⁩المتابعة باستخدام",
+        "continueWithGithub": "‏⁦GitHub⁩المتابعة باستخدام"
       },
       "welcomeEmail": {
-        "subject": "\u200F\u2066!Coreverse Engine\u2069مرحبًا بك في",
-        "body": "\u200F\u2066.Coreverse Engine\u2069 شكرًا لانضمامك إلى عائلة\u2066{username}\u2069،مرحبًا "
+        "subject": "‏⁦!Coreverse Engine⁩مرحبًا بك في",
+        "body": "‏⁦.Coreverse Engine⁩ شكرًا لانضمامك إلى عائلة⁦{username}⁩،مرحبًا "
       },
       "errors": {
-        "emailInvalid": "\u200Fيرجى إدخال عنوان بريد إلكتروني صالح",
-        "passwordMin": "\u200Fيجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
-        "usernameMin": "\u200Fيجب أن يتكون اسم المستخدم من 3 أحرف على الأقل",
-        "usernameMax": "\u200Fيمكن أن يتكون اسم المستخدم من 24 حرفًا كحد أقصى",
-        "usernamePattern": "\u200Fيمكن أن يحتوي اسم المستخدم على الأحرف والأرقام والشرطات السفلية فقط",
-        "passwordMismatch": "\u200Fكلمتا المرور غير متطابقتين",
-        "acceptTermsRequired": "\u200Fيجب عليك قبول الشروط للمتابعة",
-        "invalidCredentials": "\u200Fالبريد الإلكتروني أو كلمة المرور غير صحيحة",
-        "emailInUse": "\u200Fهذا البريد الإلكتروني مستخدم بالفعل",
-        "generic": "\u200Fحدث خطأ ما. يُرجى المحاولة مرة أخرى",
-        "avatarInvalid": "\u200Fالصورة الشخصية غير صالحة أو كبيرة جدًا",
-        "sessionExpired": "\u200Fانتهت صلاحية جلستك. يُرجى تسجيل الدخول مرة أخرى"
-      },
-      "resetEmail": {
-        "subject": "\u200Fالخاصة بك\u2066Coreverse Engine\u2069 إعادة تعيين كلمة مرور ",
-        "body": "\u200F.إذا كنت قد قدمت هذا الطلب، فانقر على الزر أدناه لإنشاء كلمة مرور جديدة. إذا لم تطلب إعادة تعيين كلمة المرور، فيمكنك تجاهل هذا البريد الإلكتروني بأمان\u2066.Coreverse Engine\u2069تلقينا طلبًا لإعادة تعيين كلمة المرور الخاصة بحسابك في",
-        "cta": "\u200Fإعادة تعيين كلمة المرور"
+        "emailInvalid": "‏يرجى إدخال عنوان بريد إلكتروني صالح",
+        "passwordMin": "‏يجب أن تتكون كلمة المرور من 6 أحرف على الأقل",
+        "usernameMin": "‏يجب أن يتكون اسم المستخدم من 3 أحرف على الأقل",
+        "usernameMax": "‏يمكن أن يتكون اسم المستخدم من 24 حرفًا كحد أقصى",
+        "usernamePattern": "‏يمكن أن يحتوي اسم المستخدم على الأحرف والأرقام والشرطات السفلية فقط",
+        "passwordMismatch": "‏كلمتا المرور غير متطابقتين",
+        "acceptTermsRequired": "‏يجب عليك قبول الشروط للمتابعة",
+        "invalidCredentials": "‏البريد الإلكتروني أو كلمة المرور غير صحيحة",
+        "emailInUse": "‏هذا البريد الإلكتروني مستخدم بالفعل",
+        "generic": "‏حدث خطأ ما. يُرجى المحاولة مرة أخرى",
+        "avatarInvalid": "‏الصورة الشخصية غير صالحة أو كبيرة جدًا",
+        "sessionExpired": "‏انتهت صلاحية جلستك. يُرجى تسجيل الدخول مرة أخرى",
+        "rateLimited": "‏طلبات كثيرة جدًا. يرجى المحاولة مرة أخرى بعد بضع دقائق."
       }
     }
   }
