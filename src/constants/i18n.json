@@ -66,36 +66,62 @@
       "eyebrow": "Install Coreverse",
       "title": "Choose your build path.",
       "description": "Select your operating system, pick a graphics API, and download the matching placeholder package.",
-      "osTitle": "Select your operating system",
-      "osDescription": "Start with the platform where Coreverse Engine will run.",
-      "graphicsTitle": "Select your graphics API",
-      "graphicsDescription": "Choose Vulkan or OpenGL for the selected operating system.",
-      "downloadTitle": "Your download is ready",
-      "downloadDescription": "The current download is a text placeholder. Real packages can replace it later.",
       "selectedOs": "Operating system",
       "selectedGraphics": "Graphics API",
       "downloadAction": "Download text file",
       "back": "Back",
-      "steps": {
-        "os": {
-          "title": "Operating system",
-          "description": "Windows, Linux, or macOS"
-        },
-        "graphics": {
-          "title": "Graphics API",
-          "description": "Vulkan or OpenGL"
-        },
-        "download": {
-          "title": "Download",
-          "description": "Generated text file"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "Select your operating system",
+        "osDescription": "Start with the platform where Coreverse Engine will run.",
+        "graphicsTitle": "Select your graphics API",
+        "graphicsDescription": "Choose one of the graphics APIs supported on the selected operating system.",
+        "downloadTitle": "Your download is ready",
+        "downloadDescription": "The current download is a text placeholder. Real packages can replace it later.",
+        "steps": {
+          "os": {
+            "title": "Operating system",
+            "description": "Windows, Linux, or macOS"
+          },
+          "graphics": {
+            "title": "Graphics API",
+            "description": "Vulkan or OpenGL"
+          },
+          "download": {
+            "title": "Download",
+            "description": "Generated text file"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "Select your operating system",
+        "osDescription": "Start with the platform where Coreverse Launcher will run.",
+        "downloadTitle": "Your download is ready",
+        "downloadDescription": "The current download is a text placeholder. The real Launcher installer can replace it later.",
+        "steps": {
+          "os": {
+            "title": "Operating system",
+            "description": "Windows, Linux, or macOS"
+          },
+          "download": {
+            "title": "Download",
+            "description": "Generated text file"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "Choose what to download",
+        "launcher": "Launcher",
+        "editor": "Editor"
       }
     },
     "communityPanel": {
@@ -283,36 +309,62 @@
       "eyebrow": "Coreverse kurulumu",
       "title": "Kurulum yolunu seç.",
       "description": "İşletim sistemini seç, grafik API'yi belirle ve uygun yer tutucu paketi indir.",
-      "osTitle": "İşletim sistemini seç",
-      "osDescription": "Coreverse Engine'in çalışacağı platformla başla.",
-      "graphicsTitle": "Grafik API'yi seç",
-      "graphicsDescription": "Seçilen işletim sistemi için Vulkan veya OpenGL seç.",
-      "downloadTitle": "İndirmen hazır",
-      "downloadDescription": "Mevcut indirme bir metin yer tutucudur. Gerçek paketler daha sonra bunun yerine geçebilir.",
       "selectedOs": "İşletim sistemi",
       "selectedGraphics": "Grafik API",
       "downloadAction": "Metin dosyasını indir",
       "back": "Geri",
-      "steps": {
-        "os": {
-          "title": "İşletim sistemi",
-          "description": "Windows, Linux veya macOS"
-        },
-        "graphics": {
-          "title": "Grafik API",
-          "description": "Vulkan veya OpenGL"
-        },
-        "download": {
-          "title": "İndir",
-          "description": "Oluşturulan metin dosyası"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "İşletim sistemini seç",
+        "osDescription": "Coreverse Engine'in çalışacağı platformla başla.",
+        "graphicsTitle": "Grafik API'yi seç",
+        "graphicsDescription": "Seçilen işletim sistemi için desteklenen grafik API'lerinden birini seç.",
+        "downloadTitle": "İndirmen hazır",
+        "downloadDescription": "Mevcut indirme bir metin yer tutucudur. Gerçek paketler daha sonra bunun yerine geçebilir.",
+        "steps": {
+          "os": {
+            "title": "İşletim sistemi",
+            "description": "Windows, Linux veya macOS"
+          },
+          "graphics": {
+            "title": "Grafik API",
+            "description": "Vulkan veya OpenGL"
+          },
+          "download": {
+            "title": "İndir",
+            "description": "Oluşturulan metin dosyası"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "İşletim sistemini seç",
+        "osDescription": "Coreverse Launcher'ın çalışacağı platformla başla.",
+        "downloadTitle": "İndirmen hazır",
+        "downloadDescription": "Mevcut indirme bir metin yer tutucudur. Gerçek Launcher yükleyicisi daha sonra bunun yerine geçebilir.",
+        "steps": {
+          "os": {
+            "title": "İşletim sistemi",
+            "description": "Windows, Linux veya macOS"
+          },
+          "download": {
+            "title": "İndir",
+            "description": "Oluşturulan metin dosyası"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "İndirmek istediğini seç",
+        "launcher": "Launcher",
+        "editor": "Editor"
       }
     },
     "communityPanel": {
@@ -507,36 +559,62 @@
       "eyebrow": "Installez Coreverse",
       "title": "Choisissez votre chemin de compilation.",
       "description": "Sélectionnez votre système d'exploitation, choisissez une API graphique et téléchargez le package d'espace réservé correspondant.",
-      "osTitle": "Sélectionnez votre système d'exploitation",
-      "osDescription": "Commencez par la plateforme sur laquelle Coreverse Engine sera exécuté.",
-      "graphicsTitle": "Sélectionnez votre API graphique",
-      "graphicsDescription": "Choisissez Vulkan ou OpenGL pour le système d'exploitation sélectionné.",
-      "downloadTitle": "Votre téléchargement est prêt.",
-      "downloadDescription": "Le téléchargement actuel est un texte d'exemple. Les véritables paquets pourront le remplacer ultérieurement.",
       "selectedOs": "Système opérateur",
       "selectedGraphics": "API graphique",
       "downloadAction": "Télécharger le fichier texte",
       "back": "Dos",
-      "steps": {
-        "os": {
-          "title": "Système opérateur",
-          "description": "Windows, Linux, ou macOS"
-        },
-        "graphics": {
-          "title": "API graphique",
-          "description": "Vulkan ou OpenGL"
-        },
-        "download": {
-          "title": "Télécharger",
-          "description": "Fichier texte généré"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "Sélectionnez votre système d'exploitation",
+        "osDescription": "Commencez par la plateforme sur laquelle Coreverse Engine sera exécuté.",
+        "graphicsTitle": "Sélectionnez votre API graphique",
+        "graphicsDescription": "Choisissez l'une des API graphiques prises en charge par le système d'exploitation sélectionné.",
+        "downloadTitle": "Votre téléchargement est prêt.",
+        "downloadDescription": "Le téléchargement actuel est un texte d'exemple. Les véritables paquets pourront le remplacer ultérieurement.",
+        "steps": {
+          "os": {
+            "title": "Système opérateur",
+            "description": "Windows, Linux, ou macOS"
+          },
+          "graphics": {
+            "title": "API graphique",
+            "description": "Vulkan ou OpenGL"
+          },
+          "download": {
+            "title": "Télécharger",
+            "description": "Fichier texte généré"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "Sélectionnez votre système d'exploitation",
+        "osDescription": "Commencez par la plateforme sur laquelle Coreverse Launcher sera exécuté.",
+        "downloadTitle": "Votre téléchargement est prêt.",
+        "downloadDescription": "Le téléchargement actuel est un texte d'exemple. Le véritable programme d'installation du Launcher pourra le remplacer ultérieurement.",
+        "steps": {
+          "os": {
+            "title": "Système opérateur",
+            "description": "Windows, Linux, ou macOS"
+          },
+          "download": {
+            "title": "Télécharger",
+            "description": "Fichier texte généré"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "Choisissez ce que vous voulez télécharger",
+        "launcher": "Launcher",
+        "editor": "Éditeur"
       }
     },
     "communityPanel": {
@@ -724,36 +802,62 @@
       "eyebrow": "Coreverse installieren",
       "title": "Wähle deinen Bauweg",
       "description": "Wählen Sie Ihr Betriebssystem, wählen Sie eine Grafik-API und laden Sie das passende Platzhalterpaket herunter.",
-      "osTitle": "Wählen Sie Ihr Betriebssystem aus",
-      "osDescription": "Beginnen Sie mit der Plattform, auf der Coreverse Engine ausgeführt werden soll.",
-      "graphicsTitle": "Wählen Sie Ihre Grafik-API aus",
-      "graphicsDescription": "Wählen Sie Vulkan oder OpenGL für das ausgewählte Betriebssystem.",
-      "downloadTitle": "Ihr Download ist bereit",
-      "downloadDescription": "Der aktuelle Download ist ein Platzhaltertext. Er wird später durch die eigentlichen Pakete ersetzt.",
       "selectedOs": "Betriebssystem",
       "selectedGraphics": "Grafik-API",
       "downloadAction": "Textdatei herunterladen",
       "back": "Zurück",
-      "steps": {
-        "os": {
-          "title": "Betriebssystem",
-          "description": "Windows, Linux, oder macOS"
-        },
-        "graphics": {
-          "title": "Grafik-API",
-          "description": "Vulkan oder OpenGL"
-        },
-        "download": {
-          "title": "Herunterladen",
-          "description": "Generierte Textdatei"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "Wählen Sie Ihr Betriebssystem aus",
+        "osDescription": "Beginnen Sie mit der Plattform, auf der Coreverse Engine ausgeführt werden soll.",
+        "graphicsTitle": "Wählen Sie Ihre Grafik-API aus",
+        "graphicsDescription": "Wählen Sie eine der für das ausgewählte Betriebssystem unterstützten Grafik-APIs aus.",
+        "downloadTitle": "Ihr Download ist bereit",
+        "downloadDescription": "Der aktuelle Download ist ein Platzhaltertext. Er wird später durch die eigentlichen Pakete ersetzt.",
+        "steps": {
+          "os": {
+            "title": "Betriebssystem",
+            "description": "Windows, Linux, oder macOS"
+          },
+          "graphics": {
+            "title": "Grafik-API",
+            "description": "Vulkan oder OpenGL"
+          },
+          "download": {
+            "title": "Herunterladen",
+            "description": "Generierte Textdatei"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "Wählen Sie Ihr Betriebssystem aus",
+        "osDescription": "Beginnen Sie mit der Plattform, auf der Coreverse Launcher ausgeführt werden soll.",
+        "downloadTitle": "Ihr Download ist bereit",
+        "downloadDescription": "Der aktuelle Download ist ein Platzhaltertext. Das echte Launcher-Installationsprogramm kann ihn später ersetzen.",
+        "steps": {
+          "os": {
+            "title": "Betriebssystem",
+            "description": "Windows, Linux, oder macOS"
+          },
+          "download": {
+            "title": "Herunterladen",
+            "description": "Generierte Textdatei"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "Wählen Sie, was Sie herunterladen möchten",
+        "launcher": "Launcher",
+        "editor": "Editor"
       }
     },
     "communityPanel": {
@@ -941,36 +1045,62 @@
       "eyebrow": "Instalar Coreverse",
       "title": "Elige tu ruta de compilación.",
       "description": "Selecciona tu sistema operativo, elige una API gráfica y descarga el paquete provisional correspondiente.",
-      "osTitle": "Selecciona tu sistema operativo",
-      "osDescription": "Comienza con la plataforma donde se ejecutará Coreverse Engine.",
-      "graphicsTitle": "Selecciona tu API gráfica",
-      "graphicsDescription": "Elige Vulkan u OpenGL para el sistema operativo seleccionado.",
-      "downloadTitle": "Tu descarga está lista",
-      "downloadDescription": "La descarga actual es un marcador de posición en formato de texto. Los paquetes reales podrán sustituirlo más adelante.",
       "selectedOs": "Sistema operativo",
       "selectedGraphics": "API gráfica",
       "downloadAction": "Descargar archivo de texto",
       "back": "Atrás",
-      "steps": {
-        "os": {
-          "title": "Sistema operativo",
-          "description": "Windows, Linux o macOS"
-        },
-        "graphics": {
-          "title": "API gráfica",
-          "description": "Vulkan u OpenGL"
-        },
-        "download": {
-          "title": "Descargar",
-          "description": "Archivo de texto generado"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "Selecciona tu sistema operativo",
+        "osDescription": "Comienza con la plataforma donde se ejecutará Coreverse Engine.",
+        "graphicsTitle": "Selecciona tu API gráfica",
+        "graphicsDescription": "Elige una de las API gráficas compatibles con el sistema operativo seleccionado.",
+        "downloadTitle": "Tu descarga está lista",
+        "downloadDescription": "La descarga actual es un marcador de posición en formato de texto. Los paquetes reales podrán sustituirlo más adelante.",
+        "steps": {
+          "os": {
+            "title": "Sistema operativo",
+            "description": "Windows, Linux o macOS"
+          },
+          "graphics": {
+            "title": "API gráfica",
+            "description": "Vulkan u OpenGL"
+          },
+          "download": {
+            "title": "Descargar",
+            "description": "Archivo de texto generado"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "Selecciona tu sistema operativo",
+        "osDescription": "Comienza con la plataforma donde se ejecutará Coreverse Launcher.",
+        "downloadTitle": "Tu descarga está lista",
+        "downloadDescription": "La descarga actual es un marcador de posición en formato de texto. El instalador real del Launcher podrá sustituirlo más adelante.",
+        "steps": {
+          "os": {
+            "title": "Sistema operativo",
+            "description": "Windows, Linux o macOS"
+          },
+          "download": {
+            "title": "Descargar",
+            "description": "Archivo de texto generado"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "Elige qué quieres descargar",
+        "launcher": "Launcher",
+        "editor": "Editor"
       }
     },
     "communityPanel": {
@@ -1158,36 +1288,62 @@
       "eyebrow": "Instalar o Coreverse",
       "title": "Escolha o seu caminho de compilação.",
       "description": "Selecione o seu sistema operativo, escolha uma API gráfica e transfira o pacote de exemplo correspondente.",
-      "osTitle": "Selecione o seu sistema operativo",
-      "osDescription": "Comece pela plataforma onde o Coreverse Engine será executado.",
-      "graphicsTitle": "Selecione a sua API gráfica",
-      "graphicsDescription": "Escolha Vulkan ou OpenGL para o sistema operativo selecionado.",
-      "downloadTitle": "A sua transferência está pronta",
-      "downloadDescription": "A transferência atual é um ficheiro de texto de exemplo. Os pacotes reais poderão substituí-lo mais tarde.",
       "selectedOs": "Sistema operativo",
       "selectedGraphics": "API gráfica",
       "downloadAction": "Transferir ficheiro de texto",
       "back": "Voltar",
-      "steps": {
-        "os": {
-          "title": "Sistema operativo",
-          "description": "Windows, Linux ou macOS"
-        },
-        "graphics": {
-          "title": "API gráfica",
-          "description": "Vulkan ou OpenGL"
-        },
-        "download": {
-          "title": "Transferência",
-          "description": "Ficheiro de texto gerado"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "Selecione o seu sistema operativo",
+        "osDescription": "Comece pela plataforma onde o Coreverse Engine será executado.",
+        "graphicsTitle": "Selecione a sua API gráfica",
+        "graphicsDescription": "Escolha uma das APIs gráficas suportadas pelo sistema operativo selecionado.",
+        "downloadTitle": "A sua transferência está pronta",
+        "downloadDescription": "A transferência atual é um ficheiro de texto de exemplo. Os pacotes reais poderão substituí-lo mais tarde.",
+        "steps": {
+          "os": {
+            "title": "Sistema operativo",
+            "description": "Windows, Linux ou macOS"
+          },
+          "graphics": {
+            "title": "API gráfica",
+            "description": "Vulkan ou OpenGL"
+          },
+          "download": {
+            "title": "Transferência",
+            "description": "Ficheiro de texto gerado"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "Selecione o seu sistema operativo",
+        "osDescription": "Comece pela plataforma onde o Coreverse Launcher será executado.",
+        "downloadTitle": "A sua transferência está pronta",
+        "downloadDescription": "A transferência atual é um ficheiro de texto de exemplo. O instalador real do Launcher poderá substituí-lo mais tarde.",
+        "steps": {
+          "os": {
+            "title": "Sistema operativo",
+            "description": "Windows, Linux ou macOS"
+          },
+          "download": {
+            "title": "Transferência",
+            "description": "Ficheiro de texto gerado"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "Escolha o que pretende transferir",
+        "launcher": "Launcher",
+        "editor": "Editor"
       }
     },
     "communityPanel": {
@@ -1375,36 +1531,62 @@
       "eyebrow": "安装 Coreverse",
       "title": "选择您的构建路径。",
       "description": "选择您的操作系统，挑选图形 API，并下载对应的占位程序包。",
-      "osTitle": "选择您的操作系统",
-      "osDescription": "从 Coreverse Engine 将运行的平台开始。",
-      "graphicsTitle": "选择您的图形 API",
-      "graphicsDescription": "为所选操作系统选择 Vulkan 或 OpenGL。",
-      "downloadTitle": "您的下载已准备就绪",
-      "downloadDescription": "当前下载的是一个文本占位文件，之后可替换为真实程序包。",
       "selectedOs": "操作系统",
       "selectedGraphics": "图形 API",
       "downloadAction": "下载文本文件",
       "back": "返回",
-      "steps": {
-        "os": {
-          "title": "操作系统",
-          "description": "Windows、Linux 或 macOS"
-        },
-        "graphics": {
-          "title": "图形 API",
-          "description": "Vulkan 或 OpenGL"
-        },
-        "download": {
-          "title": "下载",
-          "description": "生成的文本文件"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "选择您的操作系统",
+        "osDescription": "从 Coreverse Engine 将运行的平台开始。",
+        "graphicsTitle": "选择您的图形 API",
+        "graphicsDescription": "为所选操作系统选择一个受支持的图形 API。",
+        "downloadTitle": "您的下载已准备就绪",
+        "downloadDescription": "当前下载的是一个文本占位文件，之后可替换为真实程序包。",
+        "steps": {
+          "os": {
+            "title": "操作系统",
+            "description": "Windows、Linux 或 macOS"
+          },
+          "graphics": {
+            "title": "图形 API",
+            "description": "Vulkan 或 OpenGL"
+          },
+          "download": {
+            "title": "下载",
+            "description": "生成的文本文件"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "选择您的操作系统",
+        "osDescription": "从 Coreverse Launcher 将运行的平台开始。",
+        "downloadTitle": "您的下载已准备就绪",
+        "downloadDescription": "当前下载的是一个文本占位文件，之后可替换为真正的 Launcher 安装程序。",
+        "steps": {
+          "os": {
+            "title": "操作系统",
+            "description": "Windows、Linux 或 macOS"
+          },
+          "download": {
+            "title": "下载",
+            "description": "生成的文本文件"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "选择要下载的内容",
+        "launcher": "启动器",
+        "editor": "编辑器"
       }
     },
     "communityPanel": {
@@ -1592,36 +1774,62 @@
       "eyebrow": "Установить Coreverse",
       "title": "Выберите путь сборки.",
       "description": "Выберите операционную систему, графический API и загрузите соответствующий демонстрационный пакет.",
-      "osTitle": "Выберите операционную систему",
-      "osDescription": "Начните с платформы, на которой будет работать Coreverse Engine.",
-      "graphicsTitle": "Выберите графический API",
-      "graphicsDescription": "Выберите Vulkan или OpenGL для выбранной операционной системы.",
-      "downloadTitle": "Ваша загрузка готова",
-      "downloadDescription": "Текущая загрузка представляет собой текстовую заглушку. Позже её можно заменить настоящими пакетами.",
       "selectedOs": "Операционная система",
       "selectedGraphics": "Графический API",
       "downloadAction": "Скачать текстовый файл",
       "back": "Назад",
-      "steps": {
-        "os": {
-          "title": "Операционная система",
-          "description": "Windows, Linux или macOS"
-        },
-        "graphics": {
-          "title": "Графический API",
-          "description": "Vulkan или OpenGL"
-        },
-        "download": {
-          "title": "Скачать",
-          "description": "Сгенерированный текстовый файл"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "Выберите операционную систему",
+        "osDescription": "Начните с платформы, на которой будет работать Coreverse Engine.",
+        "graphicsTitle": "Выберите графический API",
+        "graphicsDescription": "Выберите один из графических API, поддерживаемых выбранной операционной системой.",
+        "downloadTitle": "Ваша загрузка готова",
+        "downloadDescription": "Текущая загрузка представляет собой текстовую заглушку. Позже её можно заменить настоящими пакетами.",
+        "steps": {
+          "os": {
+            "title": "Операционная система",
+            "description": "Windows, Linux или macOS"
+          },
+          "graphics": {
+            "title": "Графический API",
+            "description": "Vulkan или OpenGL"
+          },
+          "download": {
+            "title": "Скачать",
+            "description": "Сгенерированный текстовый файл"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "Выберите операционную систему",
+        "osDescription": "Начните с платформы, на которой будет работать Coreverse Launcher.",
+        "downloadTitle": "Ваша загрузка готова",
+        "downloadDescription": "Текущая загрузка представляет собой текстовую заглушку. Позже её может заменить настоящий установщик Launcher.",
+        "steps": {
+          "os": {
+            "title": "Операционная система",
+            "description": "Windows, Linux или macOS"
+          },
+          "download": {
+            "title": "Скачать",
+            "description": "Сгенерированный текстовый файл"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "Выберите, что скачать",
+        "launcher": "Лаунчер",
+        "editor": "Редактор"
       }
     },
     "communityPanel": {
@@ -1809,36 +2017,62 @@
       "eyebrow": "Coreverse をインストール",
       "title": "ビルド方法を選択してください。",
       "description": "オペレーティングシステムを選択し、グラフィックス API を選んで、対応するプレースホルダーパッケージをダウンロードしてください。",
-      "osTitle": "オペレーティングシステムを選択",
-      "osDescription": "Coreverse Engine を実行するプラットフォームから始めましょう。",
-      "graphicsTitle": "グラフィックス API を選択",
-      "graphicsDescription": "選択したオペレーティングシステムに対して Vulkan または OpenGL を選択してください。",
-      "downloadTitle": "ダウンロードの準備ができました",
-      "downloadDescription": "現在のダウンロードはテキストのプレースホルダーです。後で実際のパッケージに置き換えることができます。",
       "selectedOs": "オペレーティングシステム",
       "selectedGraphics": "グラフィックス API",
       "downloadAction": "テキストファイルをダウンロード",
       "back": "戻る",
-      "steps": {
-        "os": {
-          "title": "オペレーティングシステム",
-          "description": "Windows、Linux、または macOS"
-        },
-        "graphics": {
-          "title": "グラフィックス API",
-          "description": "Vulkan または OpenGL"
-        },
-        "download": {
-          "title": "ダウンロード",
-          "description": "生成されたテキストファイル"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "オペレーティングシステムを選択",
+        "osDescription": "Coreverse Engine を実行するプラットフォームから始めましょう。",
+        "graphicsTitle": "グラフィックス API を選択",
+        "graphicsDescription": "選択したオペレーティングシステムで対応しているグラフィックス API のいずれかを選択してください。",
+        "downloadTitle": "ダウンロードの準備ができました",
+        "downloadDescription": "現在のダウンロードはテキストのプレースホルダーです。後で実際のパッケージに置き換えることができます。",
+        "steps": {
+          "os": {
+            "title": "オペレーティングシステム",
+            "description": "Windows、Linux、または macOS"
+          },
+          "graphics": {
+            "title": "グラフィックス API",
+            "description": "Vulkan または OpenGL"
+          },
+          "download": {
+            "title": "ダウンロード",
+            "description": "生成されたテキストファイル"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "オペレーティングシステムを選択",
+        "osDescription": "Coreverse Launcher を実行するプラットフォームから始めましょう。",
+        "downloadTitle": "ダウンロードの準備ができました",
+        "downloadDescription": "現在のダウンロードはテキストのプレースホルダーです。後で実際のLauncherインストーラーに置き換えることができます。",
+        "steps": {
+          "os": {
+            "title": "オペレーティングシステム",
+            "description": "Windows、Linux、または macOS"
+          },
+          "download": {
+            "title": "ダウンロード",
+            "description": "生成されたテキストファイル"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "ダウンロードするものを選択",
+        "launcher": "ランチャー",
+        "editor": "エディター"
       }
     },
     "communityPanel": {
@@ -2026,36 +2260,62 @@
       "eyebrow": "Coreverse 설치",
       "title": "빌드 경로를 선택하세요.",
       "description": "운영 체제를 선택하고 그래픽 API를 고른 뒤, 해당하는 플레이스홀더 패키지를 다운로드하세요.",
-      "osTitle": "운영 체제 선택",
-      "osDescription": "Coreverse Engine이 실행될 플랫폼부터 시작하세요.",
-      "graphicsTitle": "그래픽 API 선택",
-      "graphicsDescription": "선택한 운영 체제에 대해 Vulkan 또는 OpenGL을 선택하세요.",
-      "downloadTitle": "다운로드가 준비되었습니다",
-      "downloadDescription": "현재 다운로드는 텍스트 플레이스홀더입니다. 나중에 실제 패키지로 대체할 수 있습니다.",
       "selectedOs": "운영 체제",
       "selectedGraphics": "그래픽 API",
       "downloadAction": "텍스트 파일 다운로드",
       "back": "뒤로",
-      "steps": {
-        "os": {
-          "title": "운영 체제",
-          "description": "Windows, Linux 또는 macOS"
-        },
-        "graphics": {
-          "title": "그래픽 API",
-          "description": "Vulkan 또는 OpenGL"
-        },
-        "download": {
-          "title": "다운로드",
-          "description": "생성된 텍스트 파일"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "운영 체제 선택",
+        "osDescription": "Coreverse Engine이 실행될 플랫폼부터 시작하세요.",
+        "graphicsTitle": "그래픽 API 선택",
+        "graphicsDescription": "선택한 운영 체제에서 지원하는 그래픽 API 중 하나를 선택하세요.",
+        "downloadTitle": "다운로드가 준비되었습니다",
+        "downloadDescription": "현재 다운로드는 텍스트 플레이스홀더입니다. 나중에 실제 패키지로 대체할 수 있습니다.",
+        "steps": {
+          "os": {
+            "title": "운영 체제",
+            "description": "Windows, Linux 또는 macOS"
+          },
+          "graphics": {
+            "title": "그래픽 API",
+            "description": "Vulkan 또는 OpenGL"
+          },
+          "download": {
+            "title": "다운로드",
+            "description": "생성된 텍스트 파일"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "운영 체제 선택",
+        "osDescription": "Coreverse Launcher가 실행될 플랫폼부터 시작하세요.",
+        "downloadTitle": "다운로드가 준비되었습니다",
+        "downloadDescription": "현재 다운로드는 텍스트 플레이스홀더입니다. 나중에 실제 Launcher 설치 프로그램으로 대체할 수 있습니다.",
+        "steps": {
+          "os": {
+            "title": "운영 체제",
+            "description": "Windows, Linux 또는 macOS"
+          },
+          "download": {
+            "title": "다운로드",
+            "description": "생성된 텍스트 파일"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "다운로드할 항목 선택",
+        "launcher": "런처",
+        "editor": "에디터"
       }
     },
     "communityPanel": {
@@ -2243,36 +2503,62 @@
       "eyebrow": "Zainstaluj Coreverse",
       "title": "Wybierz ścieżkę kompilacji.",
       "description": "Wybierz swój system operacyjny, interfejs API grafiki i pobierz odpowiedni przykładowy pakiet.",
-      "osTitle": "Wybierz system operacyjny",
-      "osDescription": "Rozpocznij od platformy, na której będzie działać Coreverse Engine.",
-      "graphicsTitle": "Wybierz interfejs API grafiki",
-      "graphicsDescription": "Wybierz Vulkan lub OpenGL dla wybranego systemu operacyjnego.",
-      "downloadTitle": "Twoje pobieranie jest gotowe",
-      "downloadDescription": "Obecnie pobierany plik jest tekstowym symbolem zastępczym. Prawdziwe pakiety mogą zostać dodane później.",
       "selectedOs": "System operacyjny",
       "selectedGraphics": "Interfejs API grafiki",
       "downloadAction": "Pobierz plik tekstowy",
       "back": "Wstecz",
-      "steps": {
-        "os": {
-          "title": "System operacyjny",
-          "description": "Windows, Linux lub macOS"
-        },
-        "graphics": {
-          "title": "Interfejs API grafiki",
-          "description": "Vulkan lub OpenGL"
-        },
-        "download": {
-          "title": "Pobierz",
-          "description": "Wygenerowany plik tekstowy"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "Wybierz system operacyjny",
+        "osDescription": "Rozpocznij od platformy, na której będzie działać Coreverse Engine.",
+        "graphicsTitle": "Wybierz interfejs API grafiki",
+        "graphicsDescription": "Wybierz jeden z interfejsów API grafiki obsługiwanych przez wybrany system operacyjny.",
+        "downloadTitle": "Twoje pobieranie jest gotowe",
+        "downloadDescription": "Obecnie pobierany plik jest tekstowym symbolem zastępczym. Prawdziwe pakiety mogą zostać dodane później.",
+        "steps": {
+          "os": {
+            "title": "System operacyjny",
+            "description": "Windows, Linux lub macOS"
+          },
+          "graphics": {
+            "title": "Interfejs API grafiki",
+            "description": "Vulkan lub OpenGL"
+          },
+          "download": {
+            "title": "Pobierz",
+            "description": "Wygenerowany plik tekstowy"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "Wybierz system operacyjny",
+        "osDescription": "Rozpocznij od platformy, na której będzie działać Coreverse Launcher.",
+        "downloadTitle": "Twoje pobieranie jest gotowe",
+        "downloadDescription": "Obecnie pobierany plik jest tekstowym symbolem zastępczym. Prawdziwy instalator Launchera może zostać dodany później.",
+        "steps": {
+          "os": {
+            "title": "System operacyjny",
+            "description": "Windows, Linux lub macOS"
+          },
+          "download": {
+            "title": "Pobierz",
+            "description": "Wygenerowany plik tekstowy"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "Wybierz, co chcesz pobrać",
+        "launcher": "Launcher",
+        "editor": "Edytor"
       }
     },
     "communityPanel": {
@@ -2460,36 +2746,62 @@
       "eyebrow": "Coreverse इंस्टॉल करें",
       "title": "अपना बिल्ड पथ चुनें।",
       "description": "अपना ऑपरेटिंग सिस्टम चुनें, एक ग्राफ़िक्स API चुनें, और उससे मेल खाने वाला प्लेसहोल्डर पैकेज डाउनलोड करें।",
-      "osTitle": "अपना ऑपरेटिंग सिस्टम चुनें",
-      "osDescription": "उस प्लेटफ़ॉर्म से शुरुआत करें जिस पर Coreverse Engine चलेगा।",
-      "graphicsTitle": "अपना ग्राफ़िक्स API चुनें",
-      "graphicsDescription": "चयनित ऑपरेटिंग सिस्टम के लिए Vulkan या OpenGL चुनें।",
-      "downloadTitle": "आपका डाउनलोड तैयार है",
-      "downloadDescription": "वर्तमान डाउनलोड एक टेक्स्ट प्लेसहोल्डर है। बाद में इसे वास्तविक पैकेजों से बदला जा सकता है।",
       "selectedOs": "ऑपरेटिंग सिस्टम",
       "selectedGraphics": "ग्राफ़िक्स API",
       "downloadAction": "टेक्स्ट फ़ाइल डाउनलोड करें",
       "back": "वापस",
-      "steps": {
-        "os": {
-          "title": "ऑपरेटिंग सिस्टम",
-          "description": "Windows, Linux, या macOS"
-        },
-        "graphics": {
-          "title": "ग्राफ़िक्स API",
-          "description": "Vulkan या OpenGL"
-        },
-        "download": {
-          "title": "डाउनलोड",
-          "description": "जनरेट की गई टेक्स्ट फ़ाइल"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "अपना ऑपरेटिंग सिस्टम चुनें",
+        "osDescription": "उस प्लेटफ़ॉर्म से शुरुआत करें जिस पर Coreverse Engine चलेगा।",
+        "graphicsTitle": "अपना ग्राफ़िक्स API चुनें",
+        "graphicsDescription": "चयनित ऑपरेटिंग सिस्टम पर समर्थित ग्राफ़िक्स API में से एक चुनें।",
+        "downloadTitle": "आपका डाउनलोड तैयार है",
+        "downloadDescription": "वर्तमान डाउनलोड एक टेक्स्ट प्लेसहोल्डर है। बाद में इसे वास्तविक पैकेजों से बदला जा सकता है।",
+        "steps": {
+          "os": {
+            "title": "ऑपरेटिंग सिस्टम",
+            "description": "Windows, Linux, या macOS"
+          },
+          "graphics": {
+            "title": "ग्राफ़िक्स API",
+            "description": "Vulkan या OpenGL"
+          },
+          "download": {
+            "title": "डाउनलोड",
+            "description": "जनरेट की गई टेक्स्ट फ़ाइल"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "अपना ऑपरेटिंग सिस्टम चुनें",
+        "osDescription": "उस प्लेटफ़ॉर्म से शुरुआत करें जिस पर Coreverse Launcher चलेगा।",
+        "downloadTitle": "आपका डाउनलोड तैयार है",
+        "downloadDescription": "वर्तमान डाउनलोड एक टेक्स्ट प्लेसहोल्डर है। बाद में इसे वास्तविक Launcher इंस्टॉलर से बदला जा सकता है।",
+        "steps": {
+          "os": {
+            "title": "ऑपरेटिंग सिस्टम",
+            "description": "Windows, Linux, या macOS"
+          },
+          "download": {
+            "title": "डाउनलोड",
+            "description": "जनरेट की गई टेक्स्ट फ़ाइल"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "डाउनलोड करने के लिए चुनें",
+        "launcher": "लॉन्चर",
+        "editor": "एडिटर"
       }
     },
     "communityPanel": {
@@ -2677,36 +2989,62 @@
       "eyebrow": "‏⁦Coreverse⁩تثبيت",
       "title": "‏اختر مسار الإصدار الخاص بك",
       "description": "‏حدد نظام التشغيل، واختر واجهة برمجة الرسومات، ثم نزّل الحزمة التجريبية المطابقة",
-      "osTitle": "‏حدد نظام التشغيل",
-      "osDescription": "‏⁦Coreverse Engine⁩ابدأ بالمنصة التي سيعمل عليها",
-      "graphicsTitle": "‏حدد واجهة برمجة الرسومات",
-      "graphicsDescription": "‏اختر ⁦Vulkan⁩ أو ⁦OpenGL⁩ لنظام التشغيل المحدد",
-      "downloadTitle": "‏التنزيل جاهز",
-      "downloadDescription": "‏التنزيل الحالي عبارة عن ملف نصي تجريبي. يمكن استبداله بالحزم الفعلية لاحقًا",
       "selectedOs": "‏نظام التشغيل",
       "selectedGraphics": "‏واجهة برمجة الرسومات",
       "downloadAction": "‏تنزيل الملف النصي",
       "back": "‏رجوع",
-      "steps": {
-        "os": {
-          "title": "‏نظام التشغيل",
-          "description": "‏⁦Windows⁩ أو ⁦Linux⁩ أو ⁦macOS⁩"
-        },
-        "graphics": {
-          "title": "‏واجهة برمجة الرسومات",
-          "description": "‏⁦Vulkan⁩ أو ⁦OpenGL⁩"
-        },
-        "download": {
-          "title": "‏التنزيل",
-          "description": "‏ملف نصي مُنشأ"
-        }
-      },
       "options": {
         "windows": "Windows",
         "linux": "Linux",
         "macos": "macOS",
         "vulkan": "Vulkan",
-        "opengl": "OpenGL"
+        "opengl": "OpenGL",
+        "dx11": "DirectX 11",
+        "dx12": "DirectX 12",
+        "metal": "Metal"
+      },
+      "editor": {
+        "osTitle": "‏حدد نظام التشغيل",
+        "osDescription": "‏⁦Coreverse Engine⁩ابدأ بالمنصة التي سيعمل عليها",
+        "graphicsTitle": "‏حدد واجهة برمجة الرسومات",
+        "graphicsDescription": "‏اختر إحدى واجهات برمجة الرسومات المدعومة لنظام التشغيل المحدد",
+        "downloadTitle": "‏التنزيل جاهز",
+        "downloadDescription": "‏التنزيل الحالي عبارة عن ملف نصي تجريبي. يمكن استبداله بالحزم الفعلية لاحقًا",
+        "steps": {
+          "os": {
+            "title": "‏نظام التشغيل",
+            "description": "‏⁦Windows⁩ أو ⁦Linux⁩ أو ⁦macOS⁩"
+          },
+          "graphics": {
+            "title": "‏واجهة برمجة الرسومات",
+            "description": "‏⁦Vulkan⁩ أو ⁦OpenGL⁩"
+          },
+          "download": {
+            "title": "‏التنزيل",
+            "description": "‏ملف نصي مُنشأ"
+          }
+        }
+      },
+      "launcher": {
+        "osTitle": "‏حدد نظام التشغيل",
+        "osDescription": "‏ابدأ بالمنصة التي سيعمل عليها ⁦Coreverse Launcher⁩",
+        "downloadTitle": "‏التنزيل جاهز",
+        "downloadDescription": "‏التنزيل الحالي عبارة عن ملف نصي تجريبي. يمكن استبداله لاحقًا ببرنامج التثبيت الفعلي لـ⁦Launcher⁩",
+        "steps": {
+          "os": {
+            "title": "‏نظام التشغيل",
+            "description": "‏⁦Windows⁩ أو ⁦Linux⁩ أو ⁦macOS⁩"
+          },
+          "download": {
+            "title": "‏التنزيل",
+            "description": "‏ملف نصي مُنشأ"
+          }
+        }
+      },
+      "modeToggle": {
+        "label": "‏اختر ما تريد تنزيله",
+        "launcher": "‏المشغّل",
+        "editor": "‏المحرر"
       }
     },
     "communityPanel": {
