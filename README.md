@@ -1,6 +1,6 @@
 <div style="text-align: center;">
 
-<img src="public/images/coreverse-emblem.svg" width=" 250" alt ="Logo" >
+<img src="public/images/coreverse-engine-emblem.svg" width=" 250" alt ="Logo" >
 
 # Coreverse Website
 
@@ -193,6 +193,16 @@ Move into the project:
 ```bash
 cd coreverse-website
 ```
+
+Authenticate with GitHub Packages (required to install `@Coreverse-Game-Engine/db-client`):
+
+Create a personal access token (classic) with the `read:packages` scope and add it to your user-level `~/.npmrc`. Never commit it.
+
+```text
+//npm.pkg.github.com/:_authToken=YOUR_TOKEN
+```
+
+The repository `.npmrc` only maps the `@Coreverse-Game-Engine` scope to `https://npm.pkg.github.com`. GitHub Actions workflows read the token from the `PACKAGES_READ_TOKEN` secret and fall back to `GITHUB_TOKEN`.
 
 Install dependencies:
 

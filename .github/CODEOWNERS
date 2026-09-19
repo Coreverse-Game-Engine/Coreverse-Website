@@ -1,0 +1,6 @@
+# Coreverse Website CODEOWNERS
+
+* @Coreverse-Game-Engine/website
+
+# Protect CODEOWNERS itself
+/.github/CODEOWNERS @Coreverse-Game-Engine/website

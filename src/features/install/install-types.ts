@@ -35,9 +35,9 @@ export type GraphicsApiOption = {
 export const graphicsApiOptions: Record<GraphicsApi, GraphicsApiOption> = {
   vulkan: { value: "vulkan", labelKey: "vulkan", kind: "image", image: "/images/Vulkan-Logo.svg" },
   opengl: { value: "opengl", labelKey: "opengl", kind: "image", image: "/images/OpenGL-Logo.svg" },
-  dx11: { value: "dx11", labelKey: "dx11", kind: "badge" },
-  dx12: { value: "dx12", labelKey: "dx12", kind: "badge" },
-  metal: { value: "metal", labelKey: "metal", kind: "badge" },
+  metal: { value: "metal", labelKey: "metal", kind: "image", image: "/images/Metal-Logo.svg" },
+  dx11: { value: "dx11", labelKey: "dx11", kind: "badge", },
+  dx12: { value: "dx12", labelKey: "dx12", kind: "badge", },
 };
 
 // Short glyph shown inside a text badge -- kept distinct per API so the
@@ -46,7 +46,7 @@ export const graphicsApiOptions: Record<GraphicsApi, GraphicsApiOption> = {
 export const graphicsApiBadgeGlyph: Record<GraphicsApi, string> = {
   dx11: "DX11",
   dx12: "DX12",
-  metal: "MTL",
+  metal: "",
   vulkan: "",
   opengl: "",
 };
