@@ -41,7 +41,7 @@
     "home": {
       "eyebrow": "Next generation game engine",
       "title": "Build immersive universes with a fast, modern engine.",
-      "description": "Coreverse Engine, with its Vulkan and OpenGL-supported renderer systems, offers developers the ability to develop using C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift, and TypeScript, while also providing advanced core enhancements and the opportunity to create worlds with different physics systems.",
+      "description": "Coreverse Engine, with its Vulkan, Metal, DirectX and OpenGL based renderer systems, offers developers the ability to develop using C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift, and TypeScript, while also providing advanced core enhancements and the opportunity to create worlds with different physics systems.",
       "primaryAction": "Start building",
       "secondaryAction": "Explore features",
       "previewLabel": "Runtime preview",
@@ -94,7 +94,7 @@
           },
           "graphics": {
             "title": "Graphics API",
-            "description": "Vulkan or OpenGL"
+            "description": "Vulkan, Metal, DirectX or OpenGL"
           },
           "download": {
             "title": "Download",
@@ -142,7 +142,7 @@
         },
         {
           "title": "High-Performance Renderer",
-          "description": "Experience real-time rendering powered by Vulkan and OpenGL."
+          "description": "Experience real-time rendering powered by Vulkan, Metal, DirectX and OpenGL."
         },
         {
           "title": "Flexible Scripting",
@@ -284,7 +284,7 @@
     "home": {
       "eyebrow": "Yeni nesil oyun motoru",
       "title": "Hızlı ve modern bir motorla sürükleyici evrenler inşa et.",
-      "description": "Coreverse Engine, Vulkan ve OpenGL destekli render sistemleriyle, geliştiricilere C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift ve TypeScript kullanarak geliştirme imkanı sunarken, gelişmiş çekirdek geliştirmeleri ve farklı fizik sistemleriyle dünyalar yaratma fırsatı da sunuyor.",
+      "description": "Coreverse Engine, Vulkan, Metal, OpenGL ve DirectX tabanlı render sistemleriyle, geliştiricilere C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift ve TypeScript kullanarak geliştirme imkanı sunarken, gelişmiş çekirdek geliştirmeleri ve farklı fizik sistemleriyle dünyalar yaratma fırsatı da sunuyor.",
       "primaryAction": "İnşaa etmeye başla",
       "secondaryAction": "Özellikleri keşfedin",
       "previewLabel": "Çalışma zamanı önizlemesi",
@@ -337,7 +337,7 @@
           },
           "graphics": {
             "title": "Grafik API",
-            "description": "Vulkan veya OpenGL"
+            "description": "Vulkan, Metal, DirectX veya OpenGL"
           },
           "download": {
             "title": "İndir",
@@ -385,7 +385,7 @@
         },
         {
           "title": "Yüksek Performanslı Görüntüleyici",
-          "description": "Vulkan ve OpenGL destekli gerçek zamanlı görüntüleme deneyimini yaşayın."
+          "description": "Vulkan, Metal, DirectX ve OpenGL tabanlı gerçek zamanlı görüntüleme deneyimini yaşayın."
         },
         {
           "title": "Esnek Betik Desteği",
@@ -534,7 +534,7 @@
     "home": {
       "eyebrow": "Moteur de jeu de nouvelle génération",
       "title": "Créez des univers immersifs grâce à un moteur rapide et moderne.",
-      "description": "Coreverse Engine, avec ses systèmes de rendu compatibles Vulkan et OpenGL, offre aux développeurs la possibilité de développer en utilisant C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift et TypeScript, tout en fournissant des améliorations de base avancées et la possibilité de créer des mondes avec différents systèmes physiques.",
+      "description": "Coreverse Engine, avec ses systèmes de rendu basés sur Vulkan, Metal, DirectX et OpenGL, offre aux développeurs la possibilité de développer en C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift et TypeScript, tout en fournissant des améliorations avancées du cœur et la possibilité de créer des mondes avec différents systèmes physiques.",
       "primaryAction": "Commencez à construire",
       "secondaryAction": "Explorez les fonctionnalités",
       "previewLabel": "Aperçu de l'exécution",
@@ -587,7 +587,7 @@
           },
           "graphics": {
             "title": "API graphique",
-            "description": "Vulkan ou OpenGL"
+            "description": "Vulkan, Metal, DirectX ou OpenGL"
           },
           "download": {
             "title": "Télécharger",
@@ -635,7 +635,7 @@
         },
         {
           "title": "Moteur de rendu haute performance",
-          "description": "Profitez d'un rendu en temps réel propulsé par Vulkan et OpenGL."
+          "description": "Découvrez le rendu en temps réel propulsé par Vulkan, Metal, DirectX et OpenGL."
         },
         {
           "title": "Script flexible",
@@ -777,7 +777,7 @@
     "home": {
       "eyebrow": "Spiel-Engine der nächsten Generation",
       "title": "Erschaffe immersive Welten mit einer schnellen, modernen Engine.",
-      "description": "Die Coreverse Engine bietet Entwicklern mit ihren Vulkan- und OpenGL-unterstützten Renderersystemen die Möglichkeit, mit C, C++, C#, Dart, Java, JavaScript, Kotlin, Swift und TypeScript zu entwickeln und gleichzeitig fortschrittliche Kernerweiterungen sowie die Möglichkeit zur Erstellung von Welten mit unterschiedlichen Physiksystemen bereitzustellen.",
+      "description": "Coreverse Engine bietet mit seinen auf Vulkan, Metal, DirectX und OpenGL basierenden Renderersystemen Entwicklern die Möglichkeit, mit C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift und TypeScript zu entwickeln, und bietet gleichzeitig fortschrittliche Core-Erweiterungen sowie die Möglichkeit, Welten mit unterschiedlichen Physiksystemen zu erschaffen.",
       "primaryAction": "Beginnen Sie mit dem Bauen",
       "secondaryAction": "Funktionen entdecken",
       "previewLabel": "Laufzeitvorschau",
@@ -830,7 +830,7 @@
           },
           "graphics": {
             "title": "Grafik-API",
-            "description": "Vulkan oder OpenGL"
+            "description": "Vulkan, Metal, DirectX oder OpenGL"
           },
           "download": {
             "title": "Herunterladen",
@@ -878,7 +878,7 @@
         },
         {
           "title": "Leistungsstarker Renderer",
-          "description": "Erleben Sie Echtzeit-Rendering auf Basis von Vulkan und OpenGL."
+          "description": "Erleben Sie Echtzeit-Rendering mit Vulkan, Metal, DirectX und OpenGL."
         },
         {
           "title": "Flexibles Scripting",
@@ -1020,7 +1020,7 @@
     "home": {
       "eyebrow": "Motor de juegos de próxima generación",
       "title": "Crea universos inmersivos con un motor rápido y moderno.",
-      "description": "Coreverse Engine, con sus sistemas de renderizado compatibles con Vulkan y OpenGL, ofrece a los desarrolladores la posibilidad de desarrollar utilizando C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift y TypeScript, además de proporcionar mejoras avanzadas del núcleo y la oportunidad de crear mundos con diferentes sistemas de física.",
+      "description": "Coreverse Engine, con sus sistemas de renderizado basados en Vulkan, Metal, DirectX y OpenGL, ofrece a los desarrolladores la posibilidad de desarrollar utilizando C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift y TypeScript, al tiempo que proporciona mejoras avanzadas del núcleo y la oportunidad de crear mundos con diferentes sistemas de física.",
       "primaryAction": "Comenzar a crear",
       "secondaryAction": "Explorar funciones",
       "previewLabel": "Vista previa del entorno de ejecución",
@@ -1073,7 +1073,7 @@
           },
           "graphics": {
             "title": "API gráfica",
-            "description": "Vulkan u OpenGL"
+            "description": "Vulkan, Metal, DirectX u OpenGL"
           },
           "download": {
             "title": "Descargar",
@@ -1121,7 +1121,7 @@
         },
         {
           "title": "Renderizador de Alto Rendimiento",
-          "description": "Disfruta del renderizado en tiempo real impulsado por Vulkan y OpenGL."
+          "description": "Experimenta el renderizado en tiempo real impulsado por Vulkan, Metal, DirectX y OpenGL."
         },
         {
           "title": "Scripting Flexible",
@@ -1263,7 +1263,7 @@
     "home": {
       "eyebrow": "Motor de jogos da próxima geração",
       "title": "Crie universos imersivos com um motor rápido e moderno.",
-      "description": "O Coreverse Engine, com os seus sistemas de renderização compatíveis com Vulkan e OpenGL, oferece aos programadores a possibilidade de desenvolver em C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift e TypeScript, proporcionando também melhorias avançadas no núcleo e a oportunidade de criar mundos com diferentes sistemas de física.",
+      "description": "O Coreverse Engine, com os seus sistemas de renderização baseados em Vulkan, Metal, DirectX e OpenGL, oferece aos programadores a possibilidade de desenvolver utilizando C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift e TypeScript, ao mesmo tempo que disponibiliza melhorias avançadas do núcleo e a oportunidade de criar mundos com diferentes sistemas de física.",
       "primaryAction": "Começar a criar",
       "secondaryAction": "Explorar funcionalidades",
       "previewLabel": "Pré-visualização em tempo de execução",
@@ -1316,7 +1316,7 @@
           },
           "graphics": {
             "title": "API gráfica",
-            "description": "Vulkan ou OpenGL"
+            "description": "Vulkan, Metal, DirectX ou OpenGL"
           },
           "download": {
             "title": "Transferência",
@@ -1364,7 +1364,7 @@
         },
         {
           "title": "Renderizador de Elevado Desempenho",
-          "description": "Desfrute de renderização em tempo real com tecnologia Vulkan e OpenGL."
+          "description": "Experimente renderização em tempo real alimentada por Vulkan, Metal, DirectX e OpenGL."
         },
         {
           "title": "Programação Flexível",
@@ -1506,7 +1506,7 @@
     "home": {
       "eyebrow": "新一代游戏引擎",
       "title": "使用快速、现代化的引擎构建沉浸式宇宙。",
-      "description": "Coreverse Engine 凭借支持 Vulkan 和 OpenGL 的渲染系统，为开发者提供使用 C、C++、C#、Dart、Java、JavaScript、Kotlin、Rust、Swift 和 TypeScript 进行开发的能力，同时还提供先进的核心增强功能以及创建采用不同物理系统世界的机会。",
+      "description": "Coreverse Engine 凭借其基于 Vulkan、Metal、DirectX 和 OpenGL 的渲染器系统，为开发者提供了使用 C、C++、C#、Dart、Java、JavaScript、Kotlin、Rust、Swift 和 TypeScript 进行开发的能力，同时还提供高级核心增强功能，以及使用不同物理系统创建世界的机会。",
       "primaryAction": "开始构建",
       "secondaryAction": "探索功能",
       "previewLabel": "运行时预览",
@@ -1559,7 +1559,7 @@
           },
           "graphics": {
             "title": "图形 API",
-            "description": "Vulkan 或 OpenGL"
+            "description": "Vulkan、Metal、DirectX 或 OpenGL"
           },
           "download": {
             "title": "下载",
@@ -1607,7 +1607,7 @@
         },
         {
           "title": "高性能渲染器",
-          "description": "体验由 Vulkan 和 OpenGL 驱动的实时渲染。"
+          "description": "体验由 Vulkan、Metal、DirectX 和 OpenGL 驱动的实时渲染。"
         },
         {
           "title": "灵活脚本",
@@ -1749,7 +1749,7 @@
     "home": {
       "eyebrow": "Игровой движок нового поколения",
       "title": "Создавайте захватывающие вселенные с помощью быстрого современного движка.",
-      "description": "Coreverse Engine с системами рендеринга, поддерживающими Vulkan и OpenGL, предоставляет разработчикам возможность создавать проекты на C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift и TypeScript, а также предлагает расширенные возможности ядра и создание миров с различными физическими системами.",
+      "description": "Coreverse Engine с его системами рендеринга на базе Vulkan, Metal, DirectX и OpenGL предоставляет разработчикам возможность разрабатывать на C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift и TypeScript, а также предлагает расширенные улучшения ядра и возможность создавать миры с различными физическими системами.",
       "primaryAction": "Начать разработку",
       "secondaryAction": "Изучить возможности",
       "previewLabel": "Предварительный просмотр во время выполнения",
@@ -1802,7 +1802,7 @@
           },
           "graphics": {
             "title": "Графический API",
-            "description": "Vulkan или OpenGL"
+            "description": "Vulkan, Metal, DirectX или OpenGL"
           },
           "download": {
             "title": "Скачать",
@@ -1850,7 +1850,7 @@
         },
         {
           "title": "Высокопроизводительный рендерер",
-          "description": "Оцените рендеринг в реальном времени на базе Vulkan и OpenGL."
+          "description": "Оцените рендеринг в реальном времени на базе Vulkan, Metal, DirectX и OpenGL."
         },
         {
           "title": "Гибкое написание сценариев",
@@ -1992,7 +1992,7 @@
     "home": {
       "eyebrow": "次世代ゲームエンジン",
       "title": "高速でモダンなエンジンで、没入感あふれるユニバースを構築しましょう。",
-      "description": "Coreverse Engine は、Vulkan および OpenGL に対応したレンダラーシステムを備え、開発者が C、C++、C#、Dart、Java、JavaScript、Kotlin、Rust、Swift、TypeScript を使用して開発できるようにするとともに、高度なコア機能の強化や、異なる物理システムを備えた世界を作成する機会を提供します。",
+      "description": "Vulkan、Metal、DirectX、OpenGLベースのレンダラーシステムを備えたCoreverse Engineは、C、C++、C#、Dart、Java、JavaScript、Kotlin、Rust、Swift、TypeScriptを使用した開発を可能にするとともに、高度なコア拡張機能と、異なる物理システムを備えた世界を創造する機会を開発者に提供します。",
       "primaryAction": "開発を始める",
       "secondaryAction": "機能を見る",
       "previewLabel": "ランタイムプレビュー",
@@ -2045,7 +2045,7 @@
           },
           "graphics": {
             "title": "グラフィックス API",
-            "description": "Vulkan または OpenGL"
+            "description": "Vulkan、Metal、DirectXまたはOpenGL"
           },
           "download": {
             "title": "ダウンロード",
@@ -2093,7 +2093,7 @@
         },
         {
           "title": "高性能レンダラー",
-          "description": "Vulkan と OpenGL によるリアルタイムレンダリングを体験できます。"
+          "description": "Vulkan、Metal、DirectX、OpenGLによって実現されるリアルタイムレンダリングを体験してください。"
         },
         {
           "title": "柔軟なスクリプティング",
@@ -2235,7 +2235,7 @@
     "home": {
       "eyebrow": "차세대 게임 엔진",
       "title": "빠르고 현대적인 엔진으로 몰입감 넘치는 세계를 구축하세요.",
-      "description": "Coreverse Engine은 Vulkan 및 OpenGL을 지원하는 렌더러 시스템을 통해 개발자가 C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift, TypeScript를 사용하여 개발할 수 있도록 지원하며, 향상된 코어 기능과 다양한 물리 시스템을 활용한 세계를 제작할 수 있는 기회를 제공합니다.",
+      "description": "Vulkan, Metal, DirectX 및 OpenGL 기반 렌더러 시스템을 갖춘 Coreverse Engine은 개발자에게 C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift 및 TypeScript를 사용하여 개발할 수 있는 기능을 제공하는 동시에, 고급 코어 향상 기능과 다양한 물리 시스템을 적용한 월드를 제작할 수 있는 기회를 제공합니다.",
       "primaryAction": "개발 시작",
       "secondaryAction": "기능 살펴보기",
       "previewLabel": "런타임 미리보기",
@@ -2288,7 +2288,7 @@
           },
           "graphics": {
             "title": "그래픽 API",
-            "description": "Vulkan 또는 OpenGL"
+            "description": "Vulkan, Metal, DirectX 또는 OpenGL"
           },
           "download": {
             "title": "다운로드",
@@ -2336,7 +2336,7 @@
         },
         {
           "title": "고성능 렌더러",
-          "description": "Vulkan과 OpenGL로 구동되는 실시간 렌더링을 경험하세요."
+          "description": "Vulkan, Metal, DirectX 및 OpenGL로 구동되는 실시간 렌더링을 경험해 보세요."
         },
         {
           "title": "유연한 스크립팅",
@@ -2478,7 +2478,7 @@
     "home": {
       "eyebrow": "Silnik gier nowej generacji",
       "title": "Twórz immersyjne wszechświaty przy użyciu szybkiego, nowoczesnego silnika.",
-      "description": "Coreverse Engine dzięki systemom renderowania obsługującym Vulkan i OpenGL oferuje programistom możliwość tworzenia w językach C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift i TypeScript, a także zapewnia zaawansowane usprawnienia rdzenia oraz możliwość tworzenia światów z różnymi systemami fizyki.",
+      "description": "Coreverse Engine, dzięki swoim systemom renderowania opartym na Vulkan, Metal, DirectX i OpenGL, oferuje deweloperom możliwość tworzenia w C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift i TypeScript, zapewniając jednocześnie zaawansowane ulepszenia rdzenia oraz możliwość tworzenia światów z różnymi systemami fizyki.",
       "primaryAction": "Rozpocznij tworzenie",
       "secondaryAction": "Poznaj funkcje",
       "previewLabel": "Podgląd środowiska wykonawczego",
@@ -2531,7 +2531,7 @@
           },
           "graphics": {
             "title": "Interfejs API grafiki",
-            "description": "Vulkan lub OpenGL"
+            "description": "Vulkan, Metal, DirectX lub OpenGL"
           },
           "download": {
             "title": "Pobierz",
@@ -2579,7 +2579,7 @@
         },
         {
           "title": "Wysokowydajny renderer",
-          "description": "Korzystaj z renderowania w czasie rzeczywistym opartego na Vulkan i OpenGL."
+          "description": "Doświadcz renderowania w czasie rzeczywistym napędzanego przez Vulkan, Metal, DirectX i OpenGL."
         },
         {
           "title": "Elastyczne skryptowanie",
@@ -2721,7 +2721,7 @@
     "home": {
       "eyebrow": "अगली पीढ़ी का गेम इंजन",
       "title": "तेज़, आधुनिक इंजन के साथ इमर्सिव ब्रह्मांड बनाएँ।",
-      "description": "Coreverse Engine अपने Vulkan और OpenGL समर्थित रेंडरर सिस्टम के साथ डेवलपर्स को C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift और TypeScript का उपयोग करके विकास करने की सुविधा देता है, साथ ही उन्नत कोर सुधार और विभिन्न भौतिकी प्रणालियों वाले संसार बनाने का अवसर भी प्रदान करता है।",
+      "description": "Coreverse Engine, अपने Vulkan, Metal, DirectX और OpenGL आधारित रेंडरर सिस्टम के साथ, डेवलपर्स को C, C++, C#, Dart, Java, JavaScript, Kotlin, Rust, Swift, और TypeScript का उपयोग करके विकसित करने की क्षमता प्रदान करता है, साथ ही उन्नत कोर संवर्द्धन और विभिन्न भौतिकी प्रणालियों के साथ दुनिया बनाने का अवसर भी प्रदान करता है।",
       "primaryAction": "निर्माण शुरू करें",
       "secondaryAction": "सुविधाओं का अन्वेषण करें",
       "previewLabel": "रनटाइम पूर्वावलोकन",
@@ -2774,7 +2774,7 @@
           },
           "graphics": {
             "title": "ग्राफ़िक्स API",
-            "description": "Vulkan या OpenGL"
+            "description": "Vulkan, Metal, DirectX या OpenGL"
           },
           "download": {
             "title": "डाउनलोड",
@@ -2822,7 +2822,7 @@
         },
         {
           "title": "उच्च-प्रदर्शन रेंडरर",
-          "description": "Vulkan और OpenGL द्वारा संचालित रीयल-टाइम रेंडरिंग का अनुभव करें।"
+          "description": "Vulkan, Metal, DirectX और OpenGL द्वारा संचालित रीयल-टाइम रेंडरिंग का अनुभव करें।"
         },
         {
           "title": "लचीली स्क्रिप्टिंग",
@@ -2964,7 +2964,7 @@
     "home": {
       "eyebrow": "‏محرك ألعاب من الجيل التالي",
       "title": "‏ابنِ أكوانًا غامرة باستخدام محرك سريع وحديث",
-      "description": "‏يقدم ⁦Coreverse Engine⁩، بفضل أنظمة العرض التي تدعم ⁦Vulkan⁩ و⁦OpenGL⁩، للمطورين إمكانية التطوير باستخدام ⁦C⁩ و⁦C++⁩ و⁦C#⁩ و⁦Dart⁩ و⁦Java⁩ و⁦JavaScript⁩ و⁦Kotlin⁩⁦Rust⁩ و⁦Swift⁩ و⁦TypeScript⁩، كما يوفر تحسينات متقدمة على النواة وإمكانية إنشاء عوالم بأنظمة فيزياء مختلفة",
+      "description": "‏⁦Coreverse Engine⁩، بفضل أنظمة التصيير المبنية على ⁦Vulkan⁩ و⁦Metal⁩ و⁦DirectX⁩ و⁦OpenGL⁩، يتيح للمطورين إمكانية التطوير باستخدام ⁦C⁩ و⁦C++⁩ و⁦C#⁩ و⁦Dart⁩ و⁦Java⁩ و⁦JavaScript⁩ و⁦Kotlin⁩ و⁦Rust⁩ و⁦Swift⁩ و⁦TypeScript⁩، مع توفير تحسينات أساسية متقدمة وإمكانية إنشاء عوالم باستخدام أنظمة فيزياء مختلفة.",
       "primaryAction": "‏ابدأ البناء",
       "secondaryAction": "‏استكشف الميزات",
       "previewLabel": "‏معاينة وقت التشغيل",
@@ -3017,7 +3017,7 @@
           },
           "graphics": {
             "title": "‏واجهة برمجة الرسومات",
-            "description": "‏⁦Vulkan⁩ أو ⁦OpenGL⁩"
+            "description": "‏⁦Vulkan⁩ أو ⁦Metal⁩ أو ⁦DirectX⁩ أو ⁦OpenGL⁩"
           },
           "download": {
             "title": "‏التنزيل",
@@ -3065,7 +3065,7 @@
         },
         {
           "title": "‏عارض عالي الأداء",
-          "description": "‏استمتع بالتصيير الفوري المدعوم بتقنيتي ⁦Vulkan⁩ و⁦OpenGL⁩"
+          "description": "‏استمتع بالتصيير في الوقت الفعلي، مدعومًا بـ ⁦Vulkan⁩ و⁦Metal⁩ و⁦DirectX⁩ و⁦OpenGL⁩."
         },
         {
           "title": "‏برمجة نصية مرنة",

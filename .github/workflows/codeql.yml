@@ -42,10 +42,13 @@ jobs:
           node-version: 22.18.0
           cache: pnpm
 
+      - name: Configure GitHub Packages authentication
+        run: echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> "$HOME/.npmrc"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN || secrets.GITHUB_TOKEN }}
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v4
