@@ -1,6 +1,6 @@
 <div style="text-align: center;">
 
-<img src="public/images/coreverse-engine-emblem.svg" width=" 250" alt ="Logo" >
+<img src="public/images/coreverse-emblem.svg" width=" 250" alt ="Logo" >
 
 # Coreverse Website
 
@@ -17,7 +17,7 @@ Designed for speed, accessibility, scalability, and an exceptional developer exp
 <img src="https://img.shields.io/badge/TypeScript-7-3178C6?logo=typescript" alt="TypeScript"/>
 <img src="https://img.shields.io/badge/TailwindCSS-4-38B2AC?logo=tailwindcss" alt="Tailwind CSS"/>
 <img src="https://img.shields.io/badge/Open_Source-❤-brightgreen" alt="Open Source"/>
-<img src="https://img.shields.io/github/license/KING-MASTER2012/Coreverse-Website" alt="GitHub License"/>
+<img src="https://img.shields.io/github/license/Coreverse-Game-Engine/Coreverse-Website" alt="GitHub License"/>
 
 </p>
 
@@ -69,21 +69,21 @@ The project is built with a strong focus on:
 
 # 🌍 Supported Languages
 
-| Language                 | Status  |
-|:-------------------------|:--------|
-| 🇺🇸 English             | ✅       |
-| 🇹🇷 Turkish             | ✅       |
-| 🇫🇷 French              | ✅       |
-| 🇩🇪 German              | ✅       |
-| 🇪🇸 Spanish             | ✅       |
-| 🇵🇹 Portuguese          | ✅       |
-| 🇷🇺 Russian             | ✅       |
-| 🇨🇳 Simplified Chinese  | ✅       |
-| 🇯🇵 Japanese            | ✅       |
-| 🇰🇷 Korean              | ✅       |
-| 🇵🇱 Polish              | ✅       |
-| 🇮🇳 Hindi               | ✅       |
-| 🇸🇦 Arabic              | ✅       |
+| Language                | Status    |
+|:------------------------|:----------|
+| 🇺🇸 English              | ✅        |
+| 🇹🇷 Turkish              | ✅        |
+| 🇫🇷 French               | ✅        |
+| 🇩🇪 German               | ✅        |
+| 🇪🇸 Spanish              | ✅        |
+| 🇵🇹 Portuguese           | ✅        |
+| 🇷🇺 Russian              | ✅        |
+| 🇨🇳 Simplified Chinese   | ✅        |
+| 🇯🇵 Japanese             | ✅        |
+| 🇰🇷 Korean               | ✅        |
+| 🇵🇱 Polish               | ✅        |
+| 🇮🇳 Hindi                | ✅        |
+| 🇸🇦 Arabic               | ✅        |
 
 ---
 
@@ -96,7 +96,8 @@ The project is built with a strong focus on:
 | TypeScript     | Type Safety              |
 | Tailwind CSS   | Styling                  |
 | next-intl      | Localization             |
-| Supabase       | Backend & Authentication |
+| Supabase       | Authentication           |
+| Coreverse DB   | Data access (SDK)        |
 | pnpm           | Package Manager          |
 | GitHub Actions | CI/CD                    |
 | ESLint         | Code Quality             |
@@ -128,9 +129,9 @@ coreverse-website
 │   ├── hooks
 │   ├── i18n
 │   ├── lib
+│   ├── providers
 │   ├── services
-│   ├── supabase
-│   └── utils
+│   └── supabase
 │
 ├── AGENTS.md
 ├── CLAUDE.md
@@ -185,13 +186,13 @@ public/videos/
 Clone the repository:
 
 ```bash
-git clone [https://github.com/KING-MASTER2012/Coreverse-Website.git](https://github.com/KING-MASTER2012/Coreverse-Website.git)
+git clone https://github.com/Coreverse-Game-Engine/Coreverse-Website.git
 ```
 
 Move into the project:
 
 ```bash
-cd coreverse-website
+cd Coreverse-Website
 ```
 
 Authenticate with GitHub Packages (required to install `@Coreverse-Game-Engine/db-client`):
@@ -204,6 +205,8 @@ Create a personal access token (classic) with the `read:packages` scope and add 
 
 The repository `.npmrc` only maps the `@Coreverse-Game-Engine` scope to `https://npm.pkg.github.com`. GitHub Actions workflows read the token from the `PACKAGES_READ_TOKEN` secret and fall back to `GITHUB_TOKEN`.
 
+Requirements: Node.js as pinned in `.node-version` (>= 22.18.0) and Corepack (ships with Node up to 24; on newer Node run `npm i -g corepack`).
+
 Install dependencies:
 
 ```bash
@@ -211,14 +214,7 @@ corepack enable
 pnpm install
 ```
 
-Create:
-
-```text
-.env.local
-next-env.d.ts
-```
-
-Example:
+Create `.env.local` (see `.env.example`):
 
 ```env
 # Supabase (Client)
@@ -228,8 +224,6 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=
 NEXT_PUBLIC_COREVERSE_API_URL=
 # Brevo
 BREVO_API_KEY=
-BREVO_SMTP_KEY=
-BREVO_SMTP_LOGIN=
 BREVO_SENDER_EMAIL=
 BREVO_SENDER_NAME=
 # App
@@ -260,14 +254,15 @@ http://192.168.1.130:3000
 
 # 📜 Available Scripts
 
-| Command                  | Description               |
-|:-------------------------|:--------------------------|
-| pnpm run dev             | Development server        |
-| pnpm run dev:host        | Host development server   |
-| pnpm run build           | Production build          |
-| pnpm run start           | Production server         |
-| pnpm run lint            | Run ESLint                |
-| pnpm run typecheck       | Testing if the code works |
+| Command                  | Description                  |
+|:-------------------------|:-----------------------------|
+| pnpm run dev             | Development server           |
+| pnpm run dev:host        | Host development server      |
+| pnpm run build           | Production build             |
+| pnpm run start           | Production server            |
+| pnpm run lint            | Run ESLint                   |
+| pnpm run typecheck       | Type-check with tsc          |
+| pnpm run videos:generate | Refresh the video manifest   |
 
 ---
 
@@ -313,8 +308,7 @@ Every PR is automatically checked using GitHub Actions.
 
 The repository includes:
 
-- ✅ CI Workflow
-- 🚀 Deploy Workflow
+- ✅ CI Workflow (lint, typecheck, build)
 - 🔍 CodeQL Analysis
 - 📦 Dependabot Updates
 - 💰 GitHub Sponsors

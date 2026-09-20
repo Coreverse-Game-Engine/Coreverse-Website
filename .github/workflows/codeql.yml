@@ -1,4 +1,4 @@
-name: "CodeQL"
+name: CodeQL
 
 on:
   push:
@@ -35,20 +35,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - uses: pnpm/action-setup@v6
-
-      - uses: actions/setup-node@v5
+      - uses: ./.github/actions/setup
         with:
-          node-version: 22.18.0
-          cache: pnpm
-
-      - name: Configure GitHub Packages authentication
-        run: echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> "$HOME/.npmrc"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN || secrets.GITHUB_TOKEN }}
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+          packages-token: ${{ secrets.PACKAGES_READ_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v4

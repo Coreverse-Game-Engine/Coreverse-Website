@@ -8,6 +8,7 @@ import { createClient } from "@/supabase/server";
 import { requestPasswordReset as requestPasswordResetApi, CoreverseApiError } from "@Coreverse-Game-Engine/db-client";
 import { configureServerCoreverseClient } from "@/lib/coreverse/server";
 import { sendWelcomeEmail } from "@/services/brevo";
+import { sanitizeInternalPath } from "@/lib/safe-redirect";
 import {
   createLoginSchema,
   createRegisterSchema,
@@ -203,7 +204,8 @@ export const setInitialPassword = async (
 ): Promise<AuthActionState> => {
   const locale = await getLocale();
   const t = await getTranslations({ locale, namespace: "auth" });
-  const schema = createResetPasswordSchema(t); // reset ve set-password aynı kurallara tabi
+  // Set-password follows the same rules as password reset.
+  const schema = createResetPasswordSchema(t);
 
   const parsed = schema.safeParse({
     password: formData.get("password"),
@@ -230,6 +232,5 @@ export const setInitialPassword = async (
   const cookieStore = await cookies();
   cookieStore.delete("coreverse-needs-password");
 
-  const next = (formData.get("next") as string | null) ?? `/${locale}`;
-  redirect(next);
+  redirect(sanitizeInternalPath(formData.get("next"), `/${locale}`));
 };

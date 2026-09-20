@@ -1,0 +1,27 @@
+name: Setup
+description: Install Node.js, pnpm and project dependencies (with GitHub Packages access).
+
+inputs:
+  packages-token:
+    description: Token with read access to npm.pkg.github.com (read:packages).
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - uses: pnpm/action-setup@v6
+
+    - uses: actions/setup-node@v5
+      with:
+        node-version-file: .node-version
+        cache: pnpm
+
+    - name: Configure GitHub Packages authentication
+      shell: bash
+      run: echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" >> "$HOME/.npmrc"
+      env:
+        NODE_AUTH_TOKEN: ${{ inputs.packages-token }}
+
+    - name: Install dependencies
+      shell: bash
+      run: pnpm install --frozen-lockfile

@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 
 import { SetPasswordForm } from "@/features/auth/set-password-form";
+import { sanitizeInternalPath } from "@/lib/safe-redirect";
 
 type SetPasswordPageProps = {
   searchParams: Promise<{ next?: string }>;
@@ -16,7 +17,7 @@ const SetPasswordPage = async ({ searchParams }: SetPasswordPageProps) => {
         <h1 className="text-2xl font-semibold">{t("title")}</h1>
         <p className="text-sm text-muted-foreground">{t("description")}</p>
       </div>
-      <SetPasswordForm next={next ?? "/"} />
+      <SetPasswordForm next={sanitizeInternalPath(next, "/")} />
     </div>
   );
 };

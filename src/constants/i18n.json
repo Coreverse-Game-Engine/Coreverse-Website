@@ -195,6 +195,13 @@
         "haveAccount": "Already have an account?",
         "loginLink": "Sign in"
       },
+      "setPassword": {
+        "title": "Set a password for your new account",
+        "description": "Choose a password for your new Coreverse Engine account.",
+        "passwordLabel": "Password",
+        "confirmPasswordLabel": "Confirm password",
+        "submit": "Confirm"
+      },
       "forgotPassword": {
         "title": "Forgot your password?",
         "subtitle": "Enter your email address and we'll send you a password reset link",
@@ -688,6 +695,13 @@
         "haveAccount": "Vous avez déjà un compte ?",
         "loginLink": "Se connecter"
       },
+      "setPassword": {
+        "title": "Définissez un mot de passe pour votre nouveau compte",
+        "description": "Choisissez un mot de passe pour votre nouveau compte Coreverse Engine.",
+        "passwordLabel": "Mot de passe",
+        "confirmPasswordLabel": "Confirmer le mot de passe",
+        "submit": "Confirmer"
+      },
       "forgotPassword": {
         "title": "Mot de passe oublié ?",
         "subtitle": "Saisissez votre adresse e-mail et nous vous enverrons un lien de réinitialisation du mot de passe",
@@ -930,6 +944,13 @@
         "successMessage": "Dein Konto wurde erstellt! Du kannst zur Anmeldung zurückkehren und dich einloggen.",
         "haveAccount": "Haben Sie bereits ein Konto?",
         "loginLink": "Anmelden"
+      },
+      "setPassword": {
+        "title": "Legen Sie ein Passwort für Ihr neues Konto fest",
+        "description": "Wählen Sie ein Passwort für Ihr neues Coreverse-Engine-Konto.",
+        "passwordLabel": "Passwort",
+        "confirmPasswordLabel": "Passwort bestätigen",
+        "submit": "Bestätigen"
       },
       "forgotPassword": {
         "title": "Passwort vergessen?",
@@ -1174,6 +1195,13 @@
         "haveAccount": "¿Ya tienes una cuenta?",
         "loginLink": "Iniciar sesión"
       },
+      "setPassword": {
+        "title": "Establece una contraseña para tu nueva cuenta",
+        "description": "Elige una contraseña para tu nueva cuenta de Coreverse Engine.",
+        "passwordLabel": "Contraseña",
+        "confirmPasswordLabel": "Confirmar contraseña",
+        "submit": "Confirmar"
+      },
       "forgotPassword": {
         "title": "¿Olvidaste tu contraseña?",
         "subtitle": "Introduce tu dirección de correo electrónico y te enviaremos un enlace para restablecer tu contraseña",
@@ -1416,6 +1444,13 @@
         "successMessage": "A tua conta foi criada! Podes voltar ao início de sessão e iniciar sessão.",
         "haveAccount": "Já tem uma conta?",
         "loginLink": "Iniciar sessão"
+      },
+      "setPassword": {
+        "title": "Defina uma palavra-passe para a sua nova conta",
+        "description": "Escolha uma palavra-passe para a sua nova conta Coreverse Engine.",
+        "passwordLabel": "Palavra-passe",
+        "confirmPasswordLabel": "Confirmar palavra-passe",
+        "submit": "Confirmar"
       },
       "forgotPassword": {
         "title": "Esqueceu-se da sua palavra-passe?",
@@ -1660,6 +1695,13 @@
         "haveAccount": "已经有账户了？",
         "loginLink": "登录"
       },
+      "setPassword": {
+        "title": "为您的新账户设置密码",
+        "description": "请为您的新 Coreverse Engine 账户选择一个密码。",
+        "passwordLabel": "密码",
+        "confirmPasswordLabel": "确认密码",
+        "submit": "确认"
+      },
       "forgotPassword": {
         "title": "忘记密码？",
         "subtitle": "请输入您的电子邮箱地址，我们将向您发送密码重置链接",
@@ -1902,6 +1944,13 @@
         "successMessage": "Ваш аккаунт создан! Вы можете вернуться к входу и войти в систему.",
         "haveAccount": "Уже есть аккаунт?",
         "loginLink": "Войти"
+      },
+      "setPassword": {
+        "title": "Установите пароль для новой учетной записи",
+        "description": "Выберите пароль для новой учетной записи Coreverse Engine.",
+        "passwordLabel": "Пароль",
+        "confirmPasswordLabel": "Подтвердите пароль",
+        "submit": "Подтвердить"
       },
       "forgotPassword": {
         "title": "Забыли пароль?",
@@ -2146,6 +2195,13 @@
         "haveAccount": "すでにアカウントをお持ちですか？",
         "loginLink": "サインイン"
       },
+      "setPassword": {
+        "title": "新しいアカウントのパスワードを設定してください",
+        "description": "新しい Coreverse Engine アカウントのパスワードを選択してください。",
+        "passwordLabel": "パスワード",
+        "confirmPasswordLabel": "パスワードを確認",
+        "submit": "確認"
+      },
       "forgotPassword": {
         "title": "パスワードをお忘れですか？",
         "subtitle": "メールアドレスを入力すると、パスワード再設定用のリンクをお送りします",
@@ -2388,6 +2444,13 @@
         "successMessage": "계정이 생성되었습니다! 로그인 화면으로 돌아가 로그인할 수 있습니다.",
         "haveAccount": "이미 계정이 있으신가요?",
         "loginLink": "로그인"
+      },
+      "setPassword": {
+        "title": "새 계정의 비밀번호를 설정하세요",
+        "description": "새 Coreverse Engine 계정의 비밀번호를 선택하세요.",
+        "passwordLabel": "비밀번호",
+        "confirmPasswordLabel": "비밀번호 확인",
+        "submit": "확인"
       },
       "forgotPassword": {
         "title": "비밀번호를 잊으셨나요?",
@@ -2632,6 +2695,13 @@
         "haveAccount": "Masz już konto?",
         "loginLink": "Zaloguj się"
       },
+      "setPassword": {
+        "title": "Ustaw hasło do swojego nowego konta",
+        "description": "Wybierz hasło do nowego konta Coreverse Engine.",
+        "passwordLabel": "Hasło",
+        "confirmPasswordLabel": "Potwierdź hasło",
+        "submit": "Potwierdź"
+      },
       "forgotPassword": {
         "title": "Zapomniałeś hasła?",
         "subtitle": "Wprowadź swój adres e-mail, a wyślemy Ci link do zresetowania hasła",
@@ -2875,6 +2945,13 @@
         "haveAccount": "क्या आपका पहले से खाता है?",
         "loginLink": "साइन इन करें"
       },
+      "setPassword": {
+        "title": "अपने नए खाते के लिए पासवर्ड सेट करें",
+        "description": "अपने नए Coreverse Engine खाते के लिए पासवर्ड चुनें।",
+        "passwordLabel": "पासवर्ड",
+        "confirmPasswordLabel": "पासवर्ड की पुष्टि करें",
+        "submit": "पुष्टि करें"
+      },
       "forgotPassword": {
         "title": "क्या आप अपना पासवर्ड भूल गए?",
         "subtitle": "अपना ईमेल पता दर्ज करें और हम आपको पासवर्ड रीसेट करने का लिंक भेजेंगे",
@@ -3117,6 +3194,13 @@
         "successMessage": "‏⁦.⁩يمكنك الآن العودة إلى صفحة تسجيل الدخول وتسجيل الدخول إلى حسابك⁦!⁩تم إنشاء حسابك بنجاح",
         "haveAccount": "‏هل لديك حساب بالفعل؟",
         "loginLink": "‏تسجيل الدخول"
+      },
+      "setPassword": {
+        "title": "‏عيّن كلمة مرور لحسابك الجديد",
+        "description": "‏اختر كلمة مرور لحساب Coreverse Engine الجديد.",
+        "passwordLabel": "‏كلمة المرور",
+        "confirmPasswordLabel": "‏تأكيد كلمة المرور",
+        "submit": "‏تأكيد"
       },
       "forgotPassword": {
         "title": "‏هل نسيت كلمة المرور؟",

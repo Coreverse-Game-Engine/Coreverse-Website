@@ -1,6 +1,7 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient, type CookieOptions } from "@supabase/ssr";
 import type { User } from "@supabase/supabase-js";
+import { sanitizeInternalPath } from "@/lib/safe-redirect";
 
 const NEW_USER_WINDOW_MS = 5000;
 const NEEDS_PASSWORD_COOKIE = "coreverse-needs-password";
@@ -25,18 +26,17 @@ const extractLocale = (next: string): string => next.split("/").filter(Boolean)[
 export const GET = async (request: NextRequest) => {
   const { searchParams } = new URL(request.url);
   const code = searchParams.get("code");
-  const next = searchParams.get("next") ?? "/";
+  const next = sanitizeInternalPath(searchParams.get("next"), "/");
   const baseUrl = process.env.NEXT_APP_URL;
 
   if (!code) {
     return NextResponse.redirect(`${baseUrl}/login?error=oauth`);
   }
 
-  // Session cookie'lerini burada topluyoruz; sonra hangi response'u
-  // döneceğimize karar verince (ana sayfa mı, set-password mi) o
-  // response'un üzerine yazacağız. next/headers() cookieStore'una yazıp
-  // ayrı bir NextResponse döndürmek, cookie'lerin tarayıcıya hiç
-  // gitmemesine yol açıyordu.
+  // Session cookies are collected here and applied to whichever response we
+  // end up returning (home vs. set-password). Writing them to the
+  // next/headers cookieStore while returning a separate NextResponse meant
+  // the cookies never reached the browser.
   const pendingCookies: PendingCookie[] = [];
 
   const supabase = createServerClient(
